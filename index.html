@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydroseeders, Hydro-Mulchers &amp; Erosion Control Equipment | Vortec Global</title>
+<meta name="description" content="Vortec Global designs and manufactures world-class hydroseeders, hydro-mulchers, polymer sprayers and erosion control equipment in Australia. Find your machine by application or product range and get a quote today.">
+<link rel="canonical" href="https://vortecglobal.com/">
+<meta property="og:locale" content="en_AU">
+<meta property="og:title" content="Hydroseeders, Hydro-Mulchers &amp; Erosion Control Equipment | Vortec Global">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vortecglobal.com/">
+<meta property="og:image" content="https://vortecglobal.com/wp-content/uploads/2023/07/f72598fb-2c64-49d7-803b-40ddda05de7e-1024x1024.jpg">
+
+<!-- ============================================================
+  VORTEC GLOBAL — HOMEPAGE REDESIGN MOCK-UP
+  Built by Digilari · June 2026
+  Branding matched to live site (orange/black). Structure rebuilt
+  around buyer pathways and improved product-category navigation
+  (hydroseeders, hydro-mulchers, erosion control).
+  Images hotlinked from live WordPress media library.
+  Nation selector deliberately omitted per brief.
+  Static mock-up for client review — not production code.
+============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    /* ---- Vortec brand palette (sampled from live logo + theme) ---- */
+    --vx-orange:#F26522;        /* primary brand orange (Vortec Orange) */
+    --vx-orange-hover:#d9531a;
+    --vx-ink:#15191c;           /* near-black charcoal */
+    --vx-ink-2:#22272b;
+    --vx-grey:#5a6268;
+    --vx-line:#e3e6e8;
+    --vx-bg:#f4f6f7;            /* light theme background */
+    --vx-white:#ffffff;
+    --maxw:1200px;
+    --radius:6px;
+    --shadow:0 8px 30px rgba(0,0,0,.10);
+    --shadow-sm:0 3px 12px rgba(0,0,0,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--vx-ink);background:var(--vx-white);line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Oswald','Inter',sans-serif;font-weight:700;line-height:1.1;letter-spacing:.01em;text-transform:uppercase}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;font-weight:700;
+    font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.03em;
+    padding:14px 28px;border-radius:var(--radius);border:2px solid transparent;
+    cursor:pointer;transition:.18s ease;font-size:15px;
+  }
+  .btn-primary{background:var(--vx-orange);color:#fff}
+  .btn-primary:hover{background:var(--vx-orange-hover)}
+  .btn-dark{background:var(--vx-ink);color:#fff}
+  .btn-dark:hover{background:#000}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+  .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+  .btn-outline{background:transparent;color:var(--vx-ink);border-color:var(--vx-ink)}
+  .btn-outline:hover{background:var(--vx-ink);color:#fff}
+  .eyebrow{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.18em;
+    font-size:13px;font-weight:600;color:var(--vx-orange)}
+  .section{padding:80px 0}
+  .section-head{text-align:center;max-width:760px;margin:0 auto 48px}
+  .section-head h2{font-size:38px;margin-bottom:14px}
+  .section-head p{color:var(--vx-grey);font-size:17px}
+
+  /* ---------- PROMO / TOP UTILITY BAR ---------- */
+  .promobar{background:var(--vx-orange);color:#fff;text-align:center;font-family:'Oswald',sans-serif;
+    text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:600;padding:8px 16px}
+  .topbar{background:var(--vx-ink);color:#cfd4d7;font-size:13.5px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;flex-wrap:wrap}
+  .topbar a{color:#eee;font-weight:500}
+  .topbar .tb-left{display:flex;gap:22px;align-items:center}
+  .topbar .tb-left a:hover{color:var(--vx-orange)}
+  .topbar .tb-right{display:flex;gap:16px;align-items:center}
+  .topbar .tb-right a{display:inline-flex}
+
+  /* ---------- HEADER / NAV ---------- */
+  header.main{background:#fff;border-bottom:1px solid var(--vx-line);position:sticky;top:0;z-index:60;box-shadow:var(--shadow-sm)}
+  header.main .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
+  .logo img{height:52px}
+  nav.primary>ul{list-style:none;display:flex;gap:26px;align-items:center;height:84px}
+  nav.primary>ul>li{position:static;display:flex;align-items:center;height:100%}
+  nav.primary>ul>li>a{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+    font-size:15px;letter-spacing:.03em;height:100%;display:flex;align-items:center;position:relative}
+  nav.primary>ul>li>a:hover{color:var(--vx-orange)}
+  nav.primary>ul>li>a.has-mega::after{content:"▾";font-size:11px;margin-left:5px;color:var(--vx-grey);transition:.15s}
+  nav.primary>ul>li:hover>a.has-mega::after{transform:rotate(180deg);color:var(--vx-orange)}
+  nav.primary>ul>li>a.has-mega::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--vx-orange);transform:scaleX(0);transition:.18s}
+  nav.primary>ul>li:hover>a.has-mega::before{transform:scaleX(1)}
+
+  /* ---- MEGA MENU (matches current Products mega-menu layout) ---- */
+  .mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-top:3px solid var(--vx-orange);
+    box-shadow:0 16px 40px rgba(0,0,0,.16);opacity:0;visibility:hidden;transform:translateY(8px);
+    transition:.18s ease;z-index:55;padding:0}
+  nav.primary>ul>li:hover .mega{opacity:1;visibility:visible;transform:translateY(0)}
+  .mega-inner{max-width:var(--maxw);margin:0 auto;padding:28px 24px 30px;
+    display:grid;grid-template-columns:repeat(5,1fr);gap:22px 26px}
+  .mega-group{display:flex;flex-direction:column}
+  .mega-group-head{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:700;
+    font-size:13px;letter-spacing:.08em;color:var(--vx-orange);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--vx-line)}
+  .mega-group-head a{color:var(--vx-orange)}
+  .mega-item{display:flex;align-items:center;gap:10px;padding:7px 6px;border-radius:var(--radius);transition:.13s}
+  .mega-item:hover{background:var(--vx-bg)}
+  .mega-item .mi-thumb{width:42px;height:38px;flex:0 0 42px;background:#f0f0f0 center/contain no-repeat;border-radius:4px;border:1px solid var(--vx-line)}
+  .mega-item .mi-label{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;font-size:12.5px;line-height:1.15;letter-spacing:.01em;color:var(--vx-ink)}
+  .mega-item:hover .mi-label{color:var(--vx-orange)}
+  .mega-foot{grid-column:1/-1;margin-top:6px;padding-top:14px;border-top:1px solid var(--vx-line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+  .mega-foot a.view-all{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--vx-ink)}
+  .mega-foot a.view-all:hover{color:var(--vx-orange)}
+  .mega-foot .mf-note{font-size:13px;color:var(--vx-grey)}
+
+  .nav-cta{display:flex;gap:12px;align-items:center}
+  .phone-cta{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:var(--vx-ink);display:flex;align-items:center;gap:7px}
+  .phone-cta:hover{color:var(--vx-orange)}
+  .burger{display:none;background:none;border:none;font-size:26px;cursor:pointer}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden;color:#fff;padding:70px 0}
+  .hero-bg{position:absolute;inset:0;z-index:0;
+    background:url('https://vortecglobal.com/wp-content/uploads/2025/04/d38b7c6a-6e74-4a30-a929-b63f3d619e4b.jpg') center/cover no-repeat;
+    transform:scale(1);animation:heroZoom 20s ease-out forwards}
+  .hero-overlay{position:absolute;inset:0;z-index:1;
+    background:linear-gradient(90deg,rgba(12,14,16,.90) 0%,rgba(12,14,16,.60) 50%,rgba(12,14,16,.24) 100%)}
+  .hero .wrap{position:relative;z-index:2}
+  @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+  @media(prefers-reduced-motion:reduce){.hero-bg{animation:none}}
+  .hero-inner{max-width:680px;text-align:left}
+  .hero h1{font-size:58px;line-height:1.03;margin:16px 0 18px}
+  .hero h1 .hl{color:var(--vx-orange)}
+  .hero p.lede{font-size:19px;color:#e8e8e8;margin-bottom:30px;max-width:580px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+  .hero-trust{display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:#cfcfcf}
+  .hero-trust span{display:flex;align-items:center;gap:8px}
+  .hero-trust b{color:#fff}
+
+  /* ---------- PATHWAY FINDER ---------- */
+  .finder{background:var(--vx-ink);color:#fff;padding:0}
+  .finder .wrap{padding:36px 24px}
+  .finder-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+  .finder-head h2{font-size:26px;color:#fff}
+  .finder-head p{color:#bdbdbd;font-size:15px}
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+  .tab{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:.04em;
+    font-size:14px;padding:11px 20px;border-radius:var(--radius);cursor:pointer;
+    background:#2a2f33;color:#ddd;border:2px solid transparent;transition:.15s}
+  .tab.active{background:var(--vx-orange);color:#fff}
+  .tab:hover:not(.active){background:#353b40}
+  .finder-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .finder-panel{display:none}
+  .finder-panel.active{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .fcard{background:#23282c;border:1px solid #353b40;border-radius:var(--radius);padding:18px;
+    transition:.18s;display:flex;flex-direction:column;gap:6px;min-height:112px}
+  .fcard:hover{background:#2c3236;border-color:var(--vx-orange);transform:translateY(-3px)}
+  .fcard .fc-title{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:700;font-size:16px;color:#fff}
+  .fcard .fc-sub{font-size:13px;color:#a8b0b5}
+  .fcard .fc-arrow{margin-top:auto;color:var(--vx-orange);font-weight:700;font-size:13px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.04em}
+
+  /* ---------- PRODUCT CATEGORY GRID ---------- */
+  .machines-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .mcard{background:#fff;border:1px solid var(--vx-line);border-radius:var(--radius);overflow:hidden;
+    transition:.2s;display:flex;flex-direction:column}
+  .mcard:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+  .mcard .mc-img{height:200px;background:var(--vx-bg) center/contain no-repeat;position:relative;padding:14px}
+  .mcard .mc-tag{position:absolute;top:10px;left:10px;background:var(--vx-orange);color:#fff;
+    font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:4px 10px;border-radius:3px;z-index:2}
+  .mcard .mc-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .mcard h3{font-size:20px}
+  .mcard p{font-size:14px;color:var(--vx-grey);flex:1}
+  .mcard .mc-link{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:13px;
+    color:var(--vx-ink);letter-spacing:.04em;display:inline-flex;align-items:center;gap:6px}
+  .mcard .mc-link:hover{color:var(--vx-orange)}
+
+  /* ---------- APPLICATIONS ---------- */
+  .apps{background:var(--vx-bg)}
+  .apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .acard{position:relative;border-radius:var(--radius);overflow:hidden;min-height:280px;display:flex;align-items:flex-end;
+    color:#fff;box-shadow:var(--shadow-sm);transition:.2s}
+  .acard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .acard::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.84) 100%);z-index:1}
+  .acard .ac-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:.4s}
+  .acard:hover .ac-bg{transform:scale(1.06)}
+  .acard .ac-body{position:relative;z-index:2;padding:22px}
+  .acard h3{font-size:23px;margin-bottom:6px}
+  .acard p{font-size:14px;color:#e0e0e0}
+  .acard .ac-link{margin-top:10px;display:inline-block;font-family:'Oswald',sans-serif;font-weight:700;
+    text-transform:uppercase;font-size:13px;color:var(--vx-orange);letter-spacing:.04em}
+
+  /* ---------- VORTEC ADVANTAGE / STATS ---------- */
+  .why{background:var(--vx-ink);color:#fff}
+  .why-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+  .why h2{font-size:36px;margin-bottom:18px}
+  .why p{color:#cfd4d7;font-size:16px;margin-bottom:16px}
+  .why .why-quote{border-left:3px solid var(--vx-orange);padding-left:18px;font-style:italic;color:#fff;font-size:18px;margin:24px 0}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .stat{background:#23282c;border:1px solid #353b40;border-radius:var(--radius);padding:26px 22px;text-align:center}
+  .stat .s-num{font-family:'Oswald',sans-serif;font-weight:700;font-size:38px;color:var(--vx-orange);line-height:1}
+  .stat .s-label{font-size:14px;color:#c4c9cc;margin-top:8px}
+
+  /* ---------- ADVANTAGE PILLARS ---------- */
+  .pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .pcard{background:#fff;border:1px solid var(--vx-line);border-radius:var(--radius);padding:28px 24px;transition:.18s}
+  .pcard:hover{border-color:var(--vx-orange);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
+  .pcard .p-ico{width:46px;height:46px;border-radius:50%;background:rgba(242,101,34,.12);color:var(--vx-orange);
+    display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+  .pcard h3{font-size:18px;margin-bottom:8px}
+  .pcard p{font-size:14px;color:var(--vx-grey)}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .tcard{background:#fff;border:1px solid var(--vx-line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:14px}
+  .tcard .stars{color:var(--vx-orange);letter-spacing:2px;font-size:16px}
+  .tcard p{font-size:15px;color:#444;flex:1}
+  .tcard .t-name{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:15px}
+  .tcard .t-role{font-size:13px;color:var(--vx-grey)}
+
+  /* ---------- LEAD / CTA BAND ---------- */
+  .lead{background:var(--vx-orange);color:#fff}
+  .lead .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:46px;align-items:center}
+  .lead h2{font-size:38px;margin-bottom:12px}
+  .lead p{font-size:17px;max-width:480px;margin-bottom:22px;color:#fff}
+  .lead .eyebrow{color:#fff}
+  .lead-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .lead .phone-big{font-family:'Oswald',sans-serif;font-weight:700;font-size:30px;display:inline-flex;align-items:center;gap:10px;color:#fff}
+  .quote-box{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);color:var(--vx-ink)}
+  .quote-box h3{font-size:22px;margin-bottom:6px}
+  .quote-box .qb-sub{font-size:14px;color:var(--vx-grey);margin-bottom:18px;font-family:'Inter';text-transform:none;font-weight:400}
+  .quote-box .field{margin-bottom:13px}
+  .quote-box label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+  .quote-box input,.quote-box select{width:100%;padding:11px 13px;border:1px solid var(--vx-line);border-radius:var(--radius);font-size:15px;font-family:inherit}
+  .quote-box .qb-note{font-size:12px;color:var(--vx-grey);margin-top:6px;text-align:center}
+
+  /* ---------- BLOG ---------- */
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .bcard{background:#fff;border:1px solid var(--vx-line);border-radius:var(--radius);overflow:hidden;transition:.2s;display:flex;flex-direction:column}
+  .bcard:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+  .bcard .b-img{height:170px;background:#eee center/cover no-repeat}
+  .bcard .b-body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .bcard h3{font-size:17px;line-height:1.25}
+  .bcard p{font-size:14px;color:var(--vx-grey);flex:1}
+  .bcard .b-link{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.04em}
+  .bcard .b-link:hover{color:var(--vx-orange)}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#0f1316;color:#bdc3c7;padding:64px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px}
+  footer h4{color:#fff;font-size:16px;margin-bottom:16px;letter-spacing:.05em}
+  footer ul{list-style:none}
+  footer li{margin-bottom:9px}
+  footer a:hover{color:var(--vx-orange)}
+  footer .f-logo img{height:46px;margin-bottom:16px}
+  footer .f-intro{font-size:14px;max-width:340px;margin-bottom:16px}
+  footer .f-contact a{color:var(--vx-orange);font-weight:600;font-family:'Oswald',sans-serif;font-size:18px}
+  .foot-bottom{border-top:1px solid #262c30;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#888}
+
+  /* ---------- MOCK-UP REVIEW BANNER ---------- */
+  .mockbanner{background:#1c1f22;color:var(--vx-orange);text-align:center;font-size:12.5px;padding:7px 16px;font-family:'Oswald',sans-serif;letter-spacing:.04em;text-transform:uppercase}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:1100px){
+    .machines-grid,.apps-grid{grid-template-columns:repeat(2,1fr)}
+    .finder-panel.active,.finder-grid{grid-template-columns:repeat(2,1fr)}
+    .pillars-grid{grid-template-columns:repeat(2,1fr)}
+    .testi-grid,.blog-grid{grid-template-columns:1fr 1fr}
+    .why-grid,.lead .wrap{grid-template-columns:1fr;gap:30px}
+    .hero h1{font-size:46px}
+    nav.primary,.nav-cta .btn,.nav-cta .phone-cta{display:none}
+    .burger{display:block}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    .section{padding:54px 0}
+    .machines-grid,.apps-grid,.finder-panel.active,.finder-grid,.testi-grid,.blog-grid,.foot-grid,.pillars-grid{grid-template-columns:1fr}
+    .hero h1{font-size:38px}
+    .hero{min-height:540px}
+    .section-head h2,.lead h2,.why h2{font-size:28px}
+    .topbar .tb-left{gap:14px;font-size:12px}
+    .stats{grid-template-columns:1fr 1fr}
+  }
+
+  /* ---------- MOBILE DRAWER ---------- */
+  .drawer{position:fixed;inset:0 0 0 auto;width:310px;max-width:85vw;background:var(--vx-ink);color:#fff;
+    z-index:200;transform:translateX(100%);transition:.25s ease;padding:24px 22px;overflow-y:auto;display:none}
+  .drawer.open{transform:translateX(0)}
+  .drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:190;opacity:0;visibility:hidden;transition:.2s}
+  .drawer-backdrop.open{opacity:1;visibility:visible}
+  .drawer .dr-close{background:none;border:none;color:#fff;font-size:26px;cursor:pointer;float:right}
+  .drawer h4{font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.1em;color:var(--vx-orange);margin:22px 0 8px}
+  .drawer a{display:block;font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:15px;padding:8px 0;color:#eee;border-bottom:1px solid #2a2f33}
+  .drawer a:hover{color:var(--vx-orange)}
+  .drawer .dr-cta{margin-top:24px}
+  @media(max-width:1100px){.drawer{display:block}}
+</style>
+</head>
+<body>
+
+<div class="mockbanner">Vortec Global · Homepage redesign mock-up · prepared by Digilari for client review (June 2026) · not live</div>
+
+<!-- ===== PROMO BAR (live site has a Free Delivery banner) ===== -->
+<div class="promobar">Free Delivery Australia-Wide on the Vortec Range</div>
+
+<!-- ===== TOP UTILITY BAR ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <a href="tel:1800867832">☎ 1800 867 832</a>
+      <a href="https://vortecglobal.com/contact/">✉ Sales enquiries</a>
+      <span style="color:#8a9197">Designed &amp; manufactured in Australia</span>
+    </div>
+    <div class="tb-right">
+      <a href="https://www.linkedin.com/in/vortec-australia-1116121a4/" title="LinkedIn">in</a>
+      <a href="https://www.youtube.com/@vortecglobal/featured" title="YouTube">▶</a>
+      <a href="https://www.facebook.com/vortecglobal/" title="Facebook">f</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER / NAV (real site navigation + improved product mega-menu) ===== -->
+<header class="main">
+  <div class="wrap">
+    <a class="logo" href="https://vortecglobal.com/" aria-label="Vortec Global home">
+      <img src="https://vortecglobal.com/wp-content/uploads/2019/05/VORTEC-ORANGE_new.png" alt="Vortec Global logo">
+    </a>
+    <nav class="primary">
+      <ul>
+
+        <!-- PRODUCTS MEGA-MENU (full live taxonomy, grouped) -->
+        <li>
+          <a class="has-mega" href="https://vortecglobal.com/hydroseeder-hydromulchers/">Products</a>
+          <div class="mega">
+            <div class="mega-inner">
+
+              <!-- Hydroseeders & Hydro-Mulchers -->
+              <div class="mega-group">
+                <div class="mega-group-head"><a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Hydroseeders &amp; Hydro-Mulchers</a></div>
+                <a class="mega-item" href="https://vortecglobal.com/product/hydroseeders-vr600/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VR600-Hydroseeders.png')"></span><span class="mi-label">VR600</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/hydroseeders-vr1200/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VR1200-Hydroseeders.png')"></span><span class="mi-label">VR1200</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/hydroseeders-vr2000/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VR2000-Hydroseeders.png')"></span><span class="mi-label">VR2000</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/vx2000-paddle-agitated-hydromulcher/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VX2000-Hydromulcher.png')"></span><span class="mi-label">VX2000 Hydro-Mulcher</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/vx2000-hydromulcher-trailer/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/02/VX2000TRAILERNB1.png')"></span><span class="mi-label">VX2000 Trailer</span></a>
+              </div>
+
+              <!-- Polymer Sprayers -->
+              <div class="mega-group">
+                <div class="mega-group-head"><a href="https://vortecglobal.com/polymer-sprayers/">Polymer Sprayers</a></div>
+                <a class="mega-item" href="https://vortecglobal.com/product/p1000-polymer-emulsion-sprayers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2022/03/P1000-NB-1.png')"></span><span class="mi-label">P1000</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/polymer-sprayers-p1200/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/04/P1200-MAIN-PHOTO40x40-1.png')"></span><span class="mi-label">P1200</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/polymer-sprayers-p1500/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/04/P1500-MAIN-PHOTO40x40-1.png')"></span><span class="mi-label">P1500</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/polymer-sprayers-p2000/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/04/P2000-MAIN-PHOTO40x40-1.png')"></span><span class="mi-label">P2000</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/p10000-polymer-soil-binder-applicator/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2024/03/P10000-no-bg.png')"></span><span class="mi-label">P10000</span></a>
+              </div>
+
+              <!-- Flocculant Sprayers -->
+              <div class="mega-group">
+                <div class="mega-group-head"><a href="https://vortecglobal.com/flocculant-sprayers/">Flocculant Sprayers</a></div>
+                <a class="mega-item" href="https://vortecglobal.com/flocculant-sprayers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/03/VORTEC-Flocculant-coagulant-sprayers-applicators-systems-1-e1617867147379.jpg')"></span><span class="mi-label">Flocculant Range</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/flocculant-sprayers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/03/VORTEC-Flocculant-coagulant-sprayers-applicators-systems-1-e1617867147379.jpg')"></span><span class="mi-label">Sediment Control</span></a>
+                <div class="mega-group-head" style="margin-top:18px"><a href="https://vortecglobal.com/landfill-cover-applicators/">Landfill Cover</a></div>
+                <a class="mega-item" href="https://vortecglobal.com/product/landfill-cover-applicators-lr2000/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2022/03/VR2000-Trailer-NB.png')"></span><span class="mi-label">LR2000</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/landfill-cover-applicators-lx2000/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/02/VX2000TRAILERNB1.png')"></span><span class="mi-label">LX2000</span></a>
+              </div>
+
+              <!-- Ground Preparation Tools -->
+              <div class="mega-group">
+                <div class="mega-group-head"><a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Ground Preparation</a></div>
+                <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-s200/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/s200-40x40-1.png')"></span><span class="mi-label">Rippa-Rake S200</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-x230/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/x230-40x40-1.png')"></span><span class="mi-label">Rippa-Rake X230</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-x140/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/x140-40x40-1.png')"></span><span class="mi-label">Rippa-Rake X140</span></a>
+              </div>
+
+              <!-- Agriculture -->
+              <div class="mega-group">
+                <div class="mega-group-head"><a href="https://vortecglobal.com/product/vx2000-agri-hydroviner/">Agriculture</a></div>
+                <a class="mega-item" href="https://vortecglobal.com/product/vx2000-agri-hydroviner/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/vx2000-40x40-1.png')"></span><span class="mi-label">VX2000 Agri Hydroviner</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/hydromulching-contractors/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></span><span class="mi-label">Find a Contractor</span></a>
+              </div>
+
+              <div class="mega-foot">
+                <a class="view-all" href="https://vortecglobal.com/hydroseeder-hydromulchers/">View all products →</a>
+                <span class="mf-note">Hydroseeders · Hydro-mulchers · Polymer · Flocculant · Landfill · Erosion control</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- APPLICATIONS MEGA-MENU (improves discovery by use-case, led by erosion control) -->
+        <li>
+          <a class="has-mega" href="https://vortecglobal.com/hydroseeder-hydromulchers/">Applications</a>
+          <div class="mega">
+            <div class="mega-inner" style="grid-template-columns:repeat(4,1fr)">
+              <a class="mega-item" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2025/04/d38b7c6a-6e74-4a30-a929-b63f3d619e4b.jpg')"></span><span class="mi-label">Erosion Control</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></span><span class="mi-label">Revegetation</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VR2000-Hydroseeders.png')"></span><span class="mi-label">Mine Site Rehab</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/polymer-sprayers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2024/03/P10000-no-bg.png')"></span><span class="mi-label">Dust Suppression</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/landfill-cover-applicators/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2022/03/VR2000-Trailer-NB.png')"></span><span class="mi-label">Landfill Daily Cover</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VR600-Hydroseeders.png')"></span><span class="mi-label">Commercial Landscapes</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/product/vx2000-agri-hydroviner/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/vx2000-40x40-1.png')"></span><span class="mi-label">Agriculture</span></a>
+              <a class="mega-item" href="https://vortecglobal.com/flocculant-sprayers/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/03/VORTEC-Flocculant-coagulant-sprayers-applicators-systems-1-e1617867147379.jpg')"></span><span class="mi-label">Sediment Control</span></a>
+              <div class="mega-foot">
+                <a class="view-all" href="https://vortecglobal.com/hydroseeder-hydromulchers/">Browse equipment by application →</a>
+                <span class="mf-note">Matched to the job</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="https://vortecglobal.com/about-the-vortec-story/">About</a></li>
+        <li><a href="https://vortecglobal.com/articles-hydroseeding-blogs/">Media</a></li>
+        <li><a href="https://vortecglobal.com/hydromulching-contractors/">Find a Contractor</a></li>
+        <li><a href="https://vortecglobal.com/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone-cta" href="tel:1800867832">☎ 1800 867 832</a>
+      <a class="btn btn-primary" href="https://vortecglobal.com/contact/">Get a Quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<!-- ===== MOBILE DRAWER ===== -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-label="Mobile navigation">
+  <button class="dr-close" id="drawerClose" aria-label="Close menu">&times;</button>
+  <h4>Hydroseeders &amp; Hydro-Mulchers</h4>
+  <a href="https://vortecglobal.com/product/hydroseeders-vr600/">VR600</a>
+  <a href="https://vortecglobal.com/product/hydroseeders-vr1200/">VR1200</a>
+  <a href="https://vortecglobal.com/product/hydroseeders-vr2000/">VR2000</a>
+  <a href="https://vortecglobal.com/product/vx2000-paddle-agitated-hydromulcher/">VX2000 Hydro-Mulcher</a>
+  <a href="https://vortecglobal.com/hydroseeder-hydromulchers/">View All Hydroseeders</a>
+  <h4>Polymer &amp; Flocculant</h4>
+  <a href="https://vortecglobal.com/polymer-sprayers/">Polymer Sprayers</a>
+  <a href="https://vortecglobal.com/flocculant-sprayers/">Flocculant Sprayers</a>
+  <h4>Other Products</h4>
+  <a href="https://vortecglobal.com/landfill-cover-applicators/">Landfill Cover Applicators</a>
+  <a href="https://vortecglobal.com/product/rippa-rake-s200/">Ground Preparation Tools</a>
+  <a href="https://vortecglobal.com/product/vx2000-agri-hydroviner/">Agriculture Hydroseeders</a>
+  <h4>Applications</h4>
+  <a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Erosion Control</a>
+  <a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Revegetation</a>
+  <a href="https://vortecglobal.com/polymer-sprayers/">Dust Suppression</a>
+  <a href="https://vortecglobal.com/landfill-cover-applicators/">Landfill Daily Cover</a>
+  <h4>More</h4>
+  <a href="https://vortecglobal.com/about-the-vortec-story/">About</a>
+  <a href="https://vortecglobal.com/articles-hydroseeding-blogs/">Media</a>
+  <a href="https://vortecglobal.com/hydromulching-contractors/">Find a Contractor</a>
+  <a href="https://vortecglobal.com/contact/">Contact</a>
+  <a class="btn btn-primary dr-cta" href="https://vortecglobal.com/contact/">Get a Quote</a>
+</aside>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">World-Class Hydroseeding &amp; Erosion Control Equipment</span>
+      <h1>The right machine to <span class="hl">revegetate &amp; control erosion.</span></h1>
+      <p class="lede">Hydroseeders, hydro-mulchers, polymer sprayers and erosion control systems, designed and manufactured in Australia. Find yours by application or product range.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#finder">Find Your Machine</a>
+        <a class="btn btn-ghost" href="tel:1800867832">☎ Talk to a Specialist</a>
+      </div>
+      <div class="hero-trust">
+        <span>🇦🇺 <b>Australian</b> designed &amp; built</span>
+        <span>🛠 <b>Corrosion-resistant</b> engineering</span>
+        <span>🚚 <b>Free delivery</b> Australia-wide</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PATHWAY FINDER (core navigation improvement) ===== -->
+<section class="finder" id="finder">
+  <div class="wrap">
+    <div class="finder-head">
+      <div>
+        <h2>Find Your Machine</h2>
+        <p>Browse the way you buy: by the job you're doing, or by the product range you already know.</p>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="application">By Application</button>
+      <button class="tab" data-tab="product">By Product Range</button>
+      <button class="tab" data-tab="capacity">By Capacity</button>
+    </div>
+
+    <!-- BY APPLICATION (led by erosion control) -->
+    <div class="finder-panel active" data-panel="application">
+      <a class="fcard" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="fc-title">Erosion Control</span><span class="fc-sub">Hydroseeders, hydro-mulchers &amp; binders</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="fc-title">Revegetation</span><span class="fc-sub">Hydroseeding for rapid germination</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/polymer-sprayers/"><span class="fc-title">Dust Suppression</span><span class="fc-sub">Polymer &amp; soil-binder spraying</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/landfill-cover-applicators/"><span class="fc-title">Landfill Daily Cover</span><span class="fc-sub">LR2000 &amp; LX2000 applicators</span><span class="fc-arrow">Explore →</span></a>
+    </div>
+
+    <!-- BY PRODUCT RANGE -->
+    <div class="finder-panel" data-panel="product">
+      <a class="fcard" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="fc-title">Hydroseeders</span><span class="fc-sub">VR600, VR1200, VR2000 &amp; trailers</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/product/vx2000-paddle-agitated-hydromulcher/"><span class="fc-title">Hydro-Mulchers</span><span class="fc-sub">VX2000 paddle-agitated range</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/polymer-sprayers/"><span class="fc-title">Polymer Sprayers</span><span class="fc-sub">P1000 to P10000 soil binders</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/flocculant-sprayers/"><span class="fc-title">Flocculant Sprayers</span><span class="fc-sub">Sediment &amp; water-quality control</span><span class="fc-arrow">Explore →</span></a>
+    </div>
+
+    <!-- BY CAPACITY (mirrors live capacity filter facets) -->
+    <div class="finder-panel" data-panel="capacity">
+      <a class="fcard" href="https://vortecglobal.com/product/hydroseeders-vr600/"><span class="fc-title">400 – 600 L</span><span class="fc-sub">VR600 · compact &amp; towable</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/product/hydroseeders-vr1200/"><span class="fc-title">1000 – 1500 L</span><span class="fc-sub">VR1200 · mid-range output</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/product/hydroseeders-vr2000/"><span class="fc-title">1500 – 2500 L</span><span class="fc-sub">VR2000 &amp; VX2000 · large areas</span><span class="fc-arrow">Explore →</span></a>
+      <a class="fcard" href="https://vortecglobal.com/hydroseeder-hydromulchers/"><span class="fc-title">View Full Range</span><span class="fc-sub">All capacities &amp; trailers</span><span class="fc-arrow">Explore →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCT CATEGORY HUBS (improved category navigation) ===== -->
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Shop by Product Category</span>
+      <h2>The Vortec Range</h2>
+      <p>High-performance erosion control equipment, designed and manufactured in Australia to increase efficiency and minimise downtime.</p>
+    </div>
+    <div class="machines-grid">
+      <a class="mcard" href="https://vortecglobal.com/hydroseeder-hydromulchers/">
+        <div class="mc-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VR2000-Hydroseeders.png')"><span class="mc-tag">Most Popular</span></div>
+        <div class="mc-body">
+          <h3>Hydroseeders</h3>
+          <p>Australia's most versatile hydroseeders, the VR600 to VR2000 range, for fast revegetation and erosion control across any terrain.</p>
+          <span class="mc-link">View Hydroseeders →</span>
+        </div>
+      </a>
+      <a class="mcard" href="https://vortecglobal.com/product/vx2000-paddle-agitated-hydromulcher/">
+        <div class="mc-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2020/10/VX2000-Hydromulcher.png')"><span class="mc-tag">High Output</span></div>
+        <div class="mc-body">
+          <h3>Hydro-Mulchers</h3>
+          <p>The paddle-agitated VX2000 hydro-mulcher handles heavy slurries and high-volume mulch for large-scale revegetation jobs.</p>
+          <span class="mc-link">View Hydro-Mulchers →</span>
+        </div>
+      </a>
+      <a class="mcard" href="https://vortecglobal.com/polymer-sprayers/">
+        <div class="mc-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2024/03/P10000-no-bg.png')"><span class="mc-tag">Erosion Control</span></div>
+        <div class="mc-body">
+          <h3>Polymer Sprayers</h3>
+          <p>The proven P1000 to P10000 soil-binder sprayers for dust suppression, polymer application and rapid surface stabilisation.</p>
+          <span class="mc-link">View Polymer Sprayers →</span>
+        </div>
+      </a>
+      <a class="mcard" href="https://vortecglobal.com/flocculant-sprayers/">
+        <div class="mc-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/03/VORTEC-Flocculant-coagulant-sprayers-applicators-systems-1-e1617867147379.jpg')"><span class="mc-tag">Sediment Control</span></div>
+        <div class="mc-body">
+          <h3>Flocculant Sprayers</h3>
+          <p>Highly effective flocculant and coagulant application systems for sediment control and on-site water-quality management.</p>
+          <span class="mc-link">View Flocculant Sprayers →</span>
+        </div>
+      </a>
+      <a class="mcard" href="https://vortecglobal.com/landfill-cover-applicators/">
+        <div class="mc-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2022/03/VR2000-Trailer-NB.png')"><span class="mc-tag">Landfill</span></div>
+        <div class="mc-body">
+          <h3>Landfill Cover Applicators</h3>
+          <p>The LR2000 and LX2000 proven systems for applying landfill daily cover, controlling odour, dust and pollution.</p>
+          <span class="mc-link">View Landfill Range →</span>
+        </div>
+      </a>
+      <a class="mcard" href="https://vortecglobal.com/product/rippa-rake-s200/">
+        <div class="mc-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/s200-40x40-1.png')"><span class="mc-tag">Ground Prep</span></div>
+        <div class="mc-body">
+          <h3>Ground Preparation Tools</h3>
+          <p>The Rippa-Rake S200, X140 and X230 prepare and key the soil surface for optimal seed contact and erosion control results.</p>
+          <span class="mc-link">View Ground Prep Tools →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPLICATIONS ===== -->
+<section class="section apps" id="applications">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Shop by Application</span>
+      <h2>Built For The Way You Work</h2>
+      <p>Whatever you're revegetating, stabilising or covering, we'll match you to equipment proven for Australian conditions.</p>
+    </div>
+    <div class="apps-grid">
+      <a class="acard" href="https://vortecglobal.com/hydroseeder-hydromulchers/">
+        <div class="ac-bg" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2025/04/d38b7c6a-6e74-4a30-a929-b63f3d619e4b.jpg')"></div>
+        <div class="ac-body"><h3>Erosion Control</h3><p>Hydroseeders, hydro-mulchers and soil binders that stabilise surfaces while vegetation establishes.</p><span class="ac-link">Explore Erosion Control →</span></div>
+      </a>
+      <a class="acard" href="https://vortecglobal.com/hydroseeder-hydromulchers/">
+        <div class="ac-bg" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></div>
+        <div class="ac-body"><h3>Revegetation</h3><p>Cost-effective hydroseeding for quick germination across slopes, batters and large areas.</p><span class="ac-link">Explore Revegetation →</span></div>
+      </a>
+      <a class="acard" href="https://vortecglobal.com/polymer-sprayers/">
+        <div class="ac-bg" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/07/f72598fb-2c64-49d7-803b-40ddda05de7e-1024x1024.jpg')"></div>
+        <div class="ac-body"><h3>Dust &amp; Polymer</h3><p>Polymer soil-binder sprayers for dust suppression and rapid surface stabilisation on civil sites.</p><span class="ac-link">Explore Dust Suppression →</span></div>
+      </a>
+      <a class="acard" href="https://vortecglobal.com/landfill-cover-applicators/">
+        <div class="ac-bg" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/02/IMG-20240111-WA0021.jpg')"></div>
+        <div class="ac-body"><h3>Landfill Daily Cover</h3><p>LR2000 and LX2000 daily-cover slurries for odour, dust and pollution control at landfill sites.</p><span class="ac-link">Explore Landfill →</span></div>
+      </a>
+      <a class="acard" href="https://vortecglobal.com/product/vx2000-agri-hydroviner/">
+        <div class="ac-bg" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></div>
+        <div class="ac-body"><h3>Agriculture</h3><p>The VX2000 Agri Hydroviner for seeding leucaena, pasture and large-scale agricultural revegetation.</p><span class="ac-link">Explore Agriculture →</span></div>
+      </a>
+      <a class="acard" href="https://vortecglobal.com/flocculant-sprayers/">
+        <div class="ac-bg" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2021/03/VORTEC-Flocculant-coagulant-sprayers-applicators-systems-1-e1617867147379.jpg')"></div>
+        <div class="ac-body"><h3>Sediment Control</h3><p>Flocculant and coagulant systems that manage turbidity and water quality on active sites.</p><span class="ac-link">Explore Sediment Control →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE VORTEC ADVANTAGE (pillars) ===== -->
+<section class="section" id="advantage">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Vortec Advantage</span>
+      <h2>Engineered To Perform</h2>
+      <p>The Vortec range is designed and manufactured in Australia to meet stringent safety and quality standards, using the latest innovations to increase efficiency and minimise downtime.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pcard">
+        <div class="p-ico">🛡️</div>
+        <h3>Safety</h3>
+        <p>Safety is paramount at Vortec. Our products are designed and engineered to exceed stringent operator safety standards.</p>
+      </div>
+      <div class="pcard">
+        <div class="p-ico">⚙️</div>
+        <h3>Durability</h3>
+        <p>Engineered for the harshest environments. Completely corrosion-resistant and built in Australia to the highest quality standards.</p>
+      </div>
+      <div class="pcard">
+        <div class="p-ico">📈</div>
+        <h3>Productivity</h3>
+        <p>We combine passion and innovation to develop products with unrivalled performance, increasing efficiency and minimising downtime.</p>
+      </div>
+      <div class="pcard">
+        <div class="p-ico">🤝</div>
+        <h3>Unrivalled Support</h3>
+        <p>Every product is backed by our team of industry experts, committed to positive experiences and unrivalled support every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT VORTEC + STATS ===== -->
+<section class="section why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div>
+        <span class="eyebrow">About Vortec Global</span>
+        <h2>Australia's Leading Erosion Control Manufacturer</h2>
+        <p>Founded by a quest to deliver what the industry lacked, Vortec has become Australia's leading manufacturer of hydraulic erosion control systems. We understand the importance of protecting our environment and the need to do it effectively.</p>
+        <p>The Vortec range has been engineered from the ground up to save time, save labour, save maintenance and ultimately deliver an excellent return on investment for every landscaper and contractor.</p>
+        <div class="why-quote">"Revegetate &amp; control erosion effectively with world-class hydroseeders &amp; erosion control systems."</div>
+        <a class="btn btn-primary" href="https://vortecglobal.com/about-the-vortec-story/">The Vortec Story</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="s-num">100%</div><div class="s-label">Australian designed &amp; manufactured</div></div>
+        <div class="stat"><div class="s-num">6</div><div class="s-label">Product categories</div></div>
+        <div class="stat"><div class="s-num">VR–VX</div><div class="s-label">Hydroseeder &amp; hydro-mulcher range</div></div>
+        <div class="stat"><div class="s-num">AU-Wide</div><div class="s-label">Free delivery &amp; support</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Customer Stories</span>
+      <h2>Trusted By Contractors</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"The Vortec hydroseeder has completely changed how we approach revegetation jobs. Faster setup, less downtime and a finish our clients are thrilled with."</p>
+        <div><div class="t-name">Hydroseeding Contractor</div><div class="t-role">Queensland</div></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"We run the polymer sprayer for dust suppression across our civil sites. Reliable, well-built and the support team know their gear inside out."</p>
+        <div><div class="t-name">Civil Contractor</div><div class="t-role">New South Wales</div></div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"Australian-made, corrosion resistant and built to last. The VX2000 handles everything we throw at it on large-scale erosion control work."</p>
+        <div><div class="t-name">Environmental Contractor</div><div class="t-role">Victoria</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEAD BAND (phone-first CTA + short quote form) ===== -->
+<section class="lead" id="lead">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Erosion. Controlled.</span>
+      <h2>Get a Quote Today</h2>
+      <p>Tell us what you're working on and we'll match you to the right hydroseeder, sprayer or erosion control system, with honest advice on fit and ROI. Phone is fastest.</p>
+      <div class="lead-ctas">
+        <a class="phone-big" href="tel:1800867832">☎ 1800 867 832</a>
+      </div>
+      <div class="lead-ctas" style="margin-top:18px">
+        <a class="btn btn-dark" href="https://vortecglobal.com/downloads/">Download Brochure</a>
+        <a class="btn btn-outline" href="https://vortecglobal.com/contact/" style="border-color:#fff;color:#fff">Book a Discovery Call</a>
+      </div>
+    </div>
+    <div class="quote-box">
+      <h3>Get a Quote Instantly</h3>
+      <div class="qb-sub">Quick form. We'll be in touch within one business day.</div>
+      <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
+      <div class="field"><label>Phone</label><input type="tel" placeholder="Mobile or landline"></div>
+      <div class="field"><label>Email</label><input type="email" placeholder="you@business.com.au"></div>
+      <div class="field"><label>What are you working on?</label>
+        <select><option>Select application</option><option>Erosion control</option><option>Revegetation / hydroseeding</option><option>Dust suppression / polymer</option><option>Landfill daily cover</option><option>Sediment control</option><option>Agriculture</option><option>Other</option></select>
+      </div>
+      <a class="btn btn-primary" href="https://vortecglobal.com/contact/" style="width:100%;justify-content:center">Request My Quote</a>
+      <div class="qb-note">Prefer to talk? Call 1800 867 832</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG / RESOURCES ===== -->
+<section class="section apps" id="blog">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Resources &amp; Guides</span>
+      <h2>Hydroseeding Insights</h2>
+      <p>Guides, techniques and the answers contractors look for before they invest.</p>
+    </div>
+    <div class="blog-grid">
+      <a class="bcard" href="https://vortecglobal.com/what-is-hydroseeding-guide/">
+        <div class="b-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></div>
+        <div class="b-body"><h3>What is Hydroseeding?</h3><p>The complete guide to hydroseeding, how it works and why it beats traditional sowing for erosion control.</p><span class="b-link">Read More →</span></div>
+      </a>
+      <a class="bcard" href="https://vortecglobal.com/mastering-hydroseeding-techniques/">
+        <div class="b-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2025/04/d38b7c6a-6e74-4a30-a929-b63f3d619e4b.jpg')"></div>
+        <div class="b-body"><h3>Hydroseeding Techniques For Success</h3><p>The best ways to guarantee strong, even germination and lasting erosion control results.</p><span class="b-link">Read More →</span></div>
+      </a>
+      <a class="bcard" href="https://vortecglobal.com/polymer-soil-binder-sprayers-solution/">
+        <div class="b-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2024/03/P10000-no-bg.png')"></div>
+        <div class="b-body"><h3>Polymer Soil Binder Sprayers</h3><p>The best way to stop pump failure and get reliable polymer application on every job.</p><span class="b-link">Read More →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="f-logo"><img src="https://vortecglobal.com/wp-content/uploads/2019/05/VORTEC-ORANGE_new.png" alt="Vortec Global"></div>
+        <p class="f-intro">On a mission to help civil contractors and landscapers revegetate and control erosion effectively, with world-class hydroseeders and erosion control systems designed and built in Australia.</p>
+        <p class="f-contact"><a href="tel:1800867832">☎ 1800 867 832</a></p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Hydroseeders &amp; Hydro-Mulchers</a></li>
+          <li><a href="https://vortecglobal.com/polymer-sprayers/">Polymer Sprayers</a></li>
+          <li><a href="https://vortecglobal.com/flocculant-sprayers/">Flocculant Sprayers</a></li>
+          <li><a href="https://vortecglobal.com/landfill-cover-applicators/">Landfill Cover Applicators</a></li>
+          <li><a href="https://vortecglobal.com/product/vx2000-agri-hydroviner/">Agriculture Hydroseeders</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Applications</h4>
+        <ul>
+          <li><a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Erosion Control</a></li>
+          <li><a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Revegetation</a></li>
+          <li><a href="https://vortecglobal.com/polymer-sprayers/">Dust Suppression</a></li>
+          <li><a href="https://vortecglobal.com/landfill-cover-applicators/">Landfill Daily Cover</a></li>
+          <li><a href="https://vortecglobal.com/hydromulching-contractors/">Find a Contractor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://vortecglobal.com/about-the-vortec-story/">About</a></li>
+          <li><a href="https://vortecglobal.com/articles-hydroseeding-blogs/">Articles</a></li>
+          <li><a href="https://vortecglobal.com/videos/">Videos</a></li>
+          <li><a href="https://vortecglobal.com/downloads/">Downloads</a></li>
+          <li><a href="https://vortecglobal.com/warranty-registration/">Warranty Registration</a></li>
+          <li><a href="https://vortecglobal.com/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Vortec Global. Homepage redesign mock-up by Digilari.</span>
+      <span><a href="https://vortecglobal.com/privacy-policy/">Privacy Policy</a> · <a href="https://vortecglobal.com/terms-and-conditions/">Terms &amp; Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Pathway finder tabs
+  document.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var t=tab.getAttribute('data-tab');
+      document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('active')});
+      tab.classList.add('active');
+      document.querySelectorAll('.finder-panel').forEach(function(p){
+        p.classList.toggle('active',p.getAttribute('data-panel')===t);
+      });
+    });
+  });
+
+  // Mobile drawer
+  var drawer=document.getElementById('drawer'),
+      backdrop=document.getElementById('drawerBackdrop'),
+      burger=document.getElementById('burger'),
+      drClose=document.getElementById('drawerClose');
+  function openDrawer(){drawer.classList.add('open');backdrop.classList.add('open');burger.setAttribute('aria-expanded','true')}
+  function closeDrawer(){drawer.classList.remove('open');backdrop.classList.remove('open');burger.setAttribute('aria-expanded','false')}
+  burger.addEventListener('click',openDrawer);
+  drClose.addEventListener('click',closeDrawer);
+  backdrop.addEventListener('click',closeDrawer);
+</script>
+</body>
+</html>
