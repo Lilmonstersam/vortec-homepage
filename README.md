@@ -1,4 +1,4 @@
-# Vortec Global — Homepage Redesign Mock-up
+# Vortec Global - Homepage Redesign Mock-up
 
 Static HTML mock-up of a rebuilt Vortec Global homepage, prepared by **Digilari** for client review (June 2026).
 
@@ -32,11 +32,12 @@ homepage-redesign/
 
 | Current homepage | This mock-up |
 |---|---|
-| Single "Products" dropdown, deep nested list | **Grouped Products mega-menu** (Hydroseeders & Hydro-Mulchers / Polymer / Flocculant / Landfill / Ground Prep / Agriculture) + a new **Applications mega-menu** led by Erosion Control |
+| Single "Products" dropdown, deep nested list | **Grouped Products mega-menu** (Hydroseeders & Hydro-Mulchers / Polymer / Flocculant / Landfill / Ground Prep / Agriculture) + a new **Applications mega-menu** led by Erosion Control. The contractor finder is kept as its own top-level tab, matching the live site. |
+| Plain About / Media links | **About and Media dropdowns** matching the live site: Mission / Innovation / Support / FAQ, plus Articles / Videos / Downloads |
 | No use-case navigation | Prominent 3-way **Pathway Finder** (By Application · By Product Range · By Capacity) mirroring the live filter facets |
 | Products surfaced as flat tiles | **Product-category hubs** with the headline categories first: Hydroseeders, Hydro-Mulchers, Polymer, Flocculant, Landfill, Ground Prep |
-| Brand-slogan hero | **Pathway hero** (slow zoom bg, left-aligned) + "Find Your Machine" and phone CTA |
-| One long 16-field quote form as only CTA | **Phone-first CTA** + short 4-field quote form |
+| Brand-slogan hero | **Pathway hero** (slow zoom bg, left-aligned) + "Find Your Machine", phone CTA and ROI proof from the SEO/CRO strategy |
+| One long 16-field quote form as only CTA | **Phone-first CTA** + short, segment-aware 4-field quote/callback form |
 | Nation selector (AU/NZ/EU/UK/US) | **Omitted per brief** |
 | `og:locale = en_US` | `en_AU` + AU intent signals |
 

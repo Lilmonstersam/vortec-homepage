@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hydroseeders, Hydro-Mulchers &amp; Erosion Control Equipment | Vortec Global</title>
-<meta name="description" content="Vortec Global designs and manufactures world-class hydroseeders, hydro-mulchers, polymer sprayers and erosion control equipment in Australia. Find your machine by application or product range and get a quote today.">
+<meta name="description" content="Vortec Global designs and manufactures hydraulic erosion-control equipment for contractors, councils and landfills across Australia and New Zealand. Compare hydroseeders, hydro-mulchers, polymer sprayers and landfill cover systems.">
 <link rel="canonical" href="https://vortecglobal.com/">
 <meta property="og:locale" content="en_AU">
 <meta property="og:title" content="Hydroseeders, Hydro-Mulchers &amp; Erosion Control Equipment | Vortec Global">
@@ -13,14 +13,14 @@
 <meta property="og:image" content="https://vortecglobal.com/wp-content/uploads/2023/07/f72598fb-2c64-49d7-803b-40ddda05de7e-1024x1024.jpg">
 
 <!-- ============================================================
-  VORTEC GLOBAL — HOMEPAGE REDESIGN MOCK-UP
+  VORTEC GLOBAL - HOMEPAGE REDESIGN MOCK-UP
   Built by Digilari · June 2026
   Branding matched to live site (orange/black). Structure rebuilt
   around buyer pathways and improved product-category navigation
   (hydroseeders, hydro-mulchers, erosion control).
   Images hotlinked from live WordPress media library.
   Nation selector deliberately omitted per brief.
-  Static mock-up for client review — not production code.
+  Static mock-up for client review, not production code.
 ============================================================ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,10 +95,14 @@
   nav.primary>ul>li>a{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
     font-size:15px;letter-spacing:.03em;height:100%;display:flex;align-items:center;position:relative}
   nav.primary>ul>li>a:hover{color:var(--vx-orange)}
-  nav.primary>ul>li>a.has-mega::after{content:"▾";font-size:11px;margin-left:5px;color:var(--vx-grey);transition:.15s}
-  nav.primary>ul>li:hover>a.has-mega::after{transform:rotate(180deg);color:var(--vx-orange)}
-  nav.primary>ul>li>a.has-mega::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--vx-orange);transform:scaleX(0);transition:.18s}
-  nav.primary>ul>li:hover>a.has-mega::before{transform:scaleX(1)}
+  nav.primary>ul>li>a.has-mega::after,
+  nav.primary>ul>li>a.has-dropdown::after{content:"▾";font-size:11px;margin-left:5px;color:var(--vx-grey);transition:.15s}
+  nav.primary>ul>li:hover>a.has-mega::after,
+  nav.primary>ul>li:hover>a.has-dropdown::after{transform:rotate(180deg);color:var(--vx-orange)}
+  nav.primary>ul>li>a.has-mega::before,
+  nav.primary>ul>li>a.has-dropdown::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--vx-orange);transform:scaleX(0);transition:.18s}
+  nav.primary>ul>li:hover>a.has-mega::before,
+  nav.primary>ul>li:hover>a.has-dropdown::before{transform:scaleX(1)}
 
   /* ---- MEGA MENU (matches current Products mega-menu layout) ---- */
   .mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-top:3px solid var(--vx-orange);
@@ -120,6 +124,16 @@
   .mega-foot a.view-all{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--vx-ink)}
   .mega-foot a.view-all:hover{color:var(--vx-orange)}
   .mega-foot .mf-note{font-size:13px;color:var(--vx-grey)}
+
+  /* ---- SIMPLE DROPDOWNS (matches live About / Media menu structure) ---- */
+  nav.primary>ul>li.has-simple{position:relative}
+  .dropdown{position:absolute;left:0;top:100%;width:230px;background:#fff;border-top:3px solid var(--vx-orange);
+    box-shadow:0 14px 34px rgba(0,0,0,.16);opacity:0;visibility:hidden;transform:translateY(8px);
+    transition:.18s ease;z-index:56;padding:10px 0}
+  nav.primary>ul>li:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+  .dropdown-item{display:block;padding:11px 18px;font-family:'Oswald',sans-serif;text-transform:uppercase;
+    font-weight:600;font-size:13px;letter-spacing:.035em;color:var(--vx-ink);transition:.13s}
+  .dropdown-item:hover{background:var(--vx-bg);color:var(--vx-orange)}
 
   .nav-cta{display:flex;gap:12px;align-items:center}
   .phone-cta{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:var(--vx-ink);display:flex;align-items:center;gap:7px}
@@ -212,8 +226,9 @@
   .pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
   .pcard{background:#fff;border:1px solid var(--vx-line);border-radius:var(--radius);padding:28px 24px;transition:.18s}
   .pcard:hover{border-color:var(--vx-orange);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
-  .pcard .p-ico{width:46px;height:46px;border-radius:50%;background:rgba(242,101,34,.12);color:var(--vx-orange);
-    display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+  .pcard .p-ico{width:52px;height:34px;border-radius:999px;background:rgba(242,101,34,.12);color:var(--vx-orange);
+    display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:12px;
+    font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
   .pcard h3{font-size:18px;margin-bottom:8px}
   .pcard p{font-size:14px;color:var(--vx-grey)}
 
@@ -383,7 +398,6 @@
               <div class="mega-group">
                 <div class="mega-group-head"><a href="https://vortecglobal.com/product/vx2000-agri-hydroviner/">Agriculture</a></div>
                 <a class="mega-item" href="https://vortecglobal.com/product/vx2000-agri-hydroviner/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/vx2000-40x40-1.png')"></span><span class="mi-label">VX2000 Agri Hydroviner</span></a>
-                <a class="mega-item" href="https://vortecglobal.com/hydromulching-contractors/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></span><span class="mi-label">Find a Contractor</span></a>
               </div>
 
               <div class="mega-foot">
@@ -415,8 +429,23 @@
           </div>
         </li>
 
-        <li><a href="https://vortecglobal.com/about-the-vortec-story/">About</a></li>
-        <li><a href="https://vortecglobal.com/articles-hydroseeding-blogs/">Media</a></li>
+        <li class="has-simple">
+          <a class="has-dropdown" href="https://vortecglobal.com/about-the-vortec-story/">About</a>
+          <div class="dropdown">
+            <a class="dropdown-item" href="https://vortecglobal.com/about-the-vortec-story/#mission">Mission</a>
+            <a class="dropdown-item" href="https://vortecglobal.com/about-the-vortec-story/#innovation">Innovation</a>
+            <a class="dropdown-item" href="https://vortecglobal.com/about-the-vortec-story/#support">Support</a>
+            <a class="dropdown-item" href="https://vortecglobal.com/about-the-vortec-story/#faq">FAQ</a>
+          </div>
+        </li>
+        <li class="has-simple">
+          <a class="has-dropdown" href="https://vortecglobal.com/articles-hydroseeding-blogs/">Media</a>
+          <div class="dropdown">
+            <a class="dropdown-item" href="https://vortecglobal.com/articles-hydroseeding-blogs/">Articles</a>
+            <a class="dropdown-item" href="https://vortecglobal.com/videos/">Videos</a>
+            <a class="dropdown-item" href="https://vortecglobal.com/downloads/">Downloads</a>
+          </div>
+        </li>
         <li><a href="https://vortecglobal.com/hydromulching-contractors/">Find a Contractor</a></li>
         <li><a href="https://vortecglobal.com/contact/">Contact</a></li>
       </ul>
@@ -451,9 +480,16 @@
   <a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Revegetation</a>
   <a href="https://vortecglobal.com/polymer-sprayers/">Dust Suppression</a>
   <a href="https://vortecglobal.com/landfill-cover-applicators/">Landfill Daily Cover</a>
+  <h4>About</h4>
+  <a href="https://vortecglobal.com/about-the-vortec-story/#mission">Mission</a>
+  <a href="https://vortecglobal.com/about-the-vortec-story/#innovation">Innovation</a>
+  <a href="https://vortecglobal.com/about-the-vortec-story/#support">Support</a>
+  <a href="https://vortecglobal.com/about-the-vortec-story/#faq">FAQ</a>
+  <h4>Media</h4>
+  <a href="https://vortecglobal.com/articles-hydroseeding-blogs/">Articles</a>
+  <a href="https://vortecglobal.com/videos/">Videos</a>
+  <a href="https://vortecglobal.com/downloads/">Downloads</a>
   <h4>More</h4>
-  <a href="https://vortecglobal.com/about-the-vortec-story/">About</a>
-  <a href="https://vortecglobal.com/articles-hydroseeding-blogs/">Media</a>
   <a href="https://vortecglobal.com/hydromulching-contractors/">Find a Contractor</a>
   <a href="https://vortecglobal.com/contact/">Contact</a>
   <a class="btn btn-primary dr-cta" href="https://vortecglobal.com/contact/">Get a Quote</a>
@@ -465,17 +501,17 @@
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <span class="eyebrow">World-Class Hydroseeding &amp; Erosion Control Equipment</span>
-      <h1>The right machine to <span class="hl">revegetate &amp; control erosion.</span></h1>
-      <p class="lede">Hydroseeders, hydro-mulchers, polymer sprayers and erosion control systems, designed and manufactured in Australia. Find yours by application or product range.</p>
+      <span class="eyebrow">Commercial Hydroseeding &amp; Hydraulic Erosion Control Equipment</span>
+      <h1>Self-perform <span class="hl">erosion control, revegetation &amp; landfill cover.</span></h1>
+      <p class="lede">Premium, fit-for-purpose hydroseeders, hydro-mulchers and spray systems for contractors, councils and landfills. Cut reliance on subcontractors, protect schedules and get the specs before you quote.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#finder">Find Your Machine</a>
         <a class="btn btn-ghost" href="tel:1800867832">☎ Talk to a Specialist</a>
       </div>
       <div class="hero-trust">
-        <span>🇦🇺 <b>Australian</b> designed &amp; built</span>
-        <span>🛠 <b>Corrosion-resistant</b> engineering</span>
-        <span>🚚 <b>Free delivery</b> Australia-wide</span>
+        <span><b>Up to 75%</b> cheaper than contracting</span>
+        <span><b>50+ years</b> combined experience</span>
+        <span><b>Phone-first</b> expert support</span>
       </div>
     </div>
   </div>
@@ -529,7 +565,7 @@
     <div class="section-head">
       <span class="eyebrow">Shop by Product Category</span>
       <h2>The Vortec Range</h2>
-      <p>High-performance erosion control equipment, designed and manufactured in Australia to increase efficiency and minimise downtime.</p>
+      <p>High-performance hydraulic erosion-control equipment for commercial operators who need proven fit, clear application pathways and fewer subcontractor delays.</p>
     </div>
     <div class="machines-grid">
       <a class="mcard" href="https://vortecglobal.com/hydroseeder-hydromulchers/">
@@ -590,7 +626,7 @@
     <div class="section-head">
       <span class="eyebrow">Shop by Application</span>
       <h2>Built For The Way You Work</h2>
-      <p>Whatever you're revegetating, stabilising or covering, we'll match you to equipment proven for Australian conditions.</p>
+      <p>Whatever you're revegetating, stabilising or covering, we'll match you to equipment proven for commercial conditions across Australia and New Zealand.</p>
     </div>
     <div class="apps-grid">
       <a class="acard" href="https://vortecglobal.com/hydroseeder-hydromulchers/">
@@ -627,28 +663,28 @@
     <div class="section-head">
       <span class="eyebrow">The Vortec Advantage</span>
       <h2>Engineered To Perform</h2>
-      <p>The Vortec range is designed and manufactured in Australia to meet stringent safety and quality standards, using the latest innovations to increase efficiency and minimise downtime.</p>
+      <p>The Vortec range is designed for commercial operators who need fit-for-purpose machines, measurable productivity, after-sales parts and fewer delays on active sites.</p>
     </div>
     <div class="pillars-grid">
       <div class="pcard">
-        <div class="p-ico">🛡️</div>
+        <div class="p-ico">Safe</div>
         <h3>Safety</h3>
         <p>Safety is paramount at Vortec. Our products are designed and engineered to exceed stringent operator safety standards.</p>
       </div>
       <div class="pcard">
-        <div class="p-ico">⚙️</div>
+        <div class="p-ico">Built</div>
         <h3>Durability</h3>
         <p>Engineered for the harshest environments. Completely corrosion-resistant and built in Australia to the highest quality standards.</p>
       </div>
       <div class="pcard">
-        <div class="p-ico">📈</div>
+        <div class="p-ico">ROI</div>
         <h3>Productivity</h3>
-        <p>We combine passion and innovation to develop products with unrivalled performance, increasing efficiency and minimising downtime.</p>
+        <p>Flagship productivity around 1500 m² per hour helps crews take control of timing, output and project margin.</p>
       </div>
       <div class="pcard">
-        <div class="p-ico">🤝</div>
+        <div class="p-ico">Care</div>
         <h3>Unrivalled Support</h3>
-        <p>Every product is backed by our team of industry experts, committed to positive experiences and unrivalled support every day.</p>
+        <p>Every product is backed by industry experts, genuine after-sales service and parts support to minimise downtime.</p>
       </div>
     </div>
   </div>
@@ -660,17 +696,17 @@
     <div class="why-grid">
       <div>
         <span class="eyebrow">About Vortec Global</span>
-        <h2>Australia's Leading Erosion Control Manufacturer</h2>
-        <p>Founded by a quest to deliver what the industry lacked, Vortec has become Australia's leading manufacturer of hydraulic erosion control systems. We understand the importance of protecting our environment and the need to do it effectively.</p>
-        <p>The Vortec range has been engineered from the ground up to save time, save labour, save maintenance and ultimately deliver an excellent return on investment for every landscaper and contractor.</p>
+        <h2>Australia &amp; New Zealand's Hydraulic Erosion-Control Equipment Specialist</h2>
+        <p>Vortec builds premium hydraulic erosion-control systems for civil, environmental, earthmoving and landscape contractors, plus councils and landfills that need commercial-grade equipment.</p>
+        <p>The Vortec range helps operators bring critical work in-house, cut erosion-control costs by up to 75% versus contracting, and control timing, quality and margin with machines backed by genuine after-sales service.</p>
         <div class="why-quote">"Revegetate &amp; control erosion effectively with world-class hydroseeders &amp; erosion control systems."</div>
         <a class="btn btn-primary" href="https://vortecglobal.com/about-the-vortec-story/">The Vortec Story</a>
       </div>
       <div class="stats">
-        <div class="stat"><div class="s-num">100%</div><div class="s-label">Australian designed &amp; manufactured</div></div>
-        <div class="stat"><div class="s-num">6</div><div class="s-label">Product categories</div></div>
-        <div class="stat"><div class="s-num">VR–VX</div><div class="s-label">Hydroseeder &amp; hydro-mulcher range</div></div>
-        <div class="stat"><div class="s-num">AU-Wide</div><div class="s-label">Free delivery &amp; support</div></div>
+        <div class="stat"><div class="s-num">75%</div><div class="s-label">Potential saving versus contracting</div></div>
+        <div class="stat"><div class="s-num">50+</div><div class="s-label">Years' combined experience</div></div>
+        <div class="stat"><div class="s-num">1500 m²/h</div><div class="s-label">VX2000 flagship productivity</div></div>
+        <div class="stat"><div class="s-num">AU/NZ</div><div class="s-label">Commercial support focus</div></div>
       </div>
     </div>
   </div>
@@ -707,9 +743,9 @@
 <section class="lead" id="lead">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Erosion. Controlled.</span>
+      <span class="eyebrow">ROI First</span>
       <h2>Get a Quote Today</h2>
-      <p>Tell us what you're working on and we'll match you to the right hydroseeder, sprayer or erosion control system, with honest advice on fit and ROI. Phone is fastest.</p>
+      <p>Phone is the fastest, highest-intent route. Tell us your application, capacity and timeline and we'll help you compare machine fit, specs and ROI before you invest.</p>
       <div class="lead-ctas">
         <a class="phone-big" href="tel:1800867832">☎ 1800 867 832</a>
       </div>
@@ -719,8 +755,8 @@
       </div>
     </div>
     <div class="quote-box">
-      <h3>Get a Quote Instantly</h3>
-      <div class="qb-sub">Quick form. We'll be in touch within one business day.</div>
+      <h3>Request a Callback / Quote</h3>
+      <div class="qb-sub">Short, segmented enquiry. We'll be in touch within one business day.</div>
       <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
       <div class="field"><label>Phone</label><input type="tel" placeholder="Mobile or landline"></div>
       <div class="field"><label>Email</label><input type="email" placeholder="you@business.com.au"></div>
@@ -738,21 +774,21 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Resources &amp; Guides</span>
-      <h2>Hydroseeding Insights</h2>
-      <p>Guides, techniques and the answers contractors look for before they invest.</p>
+      <h2>Buyer Resources</h2>
+      <p>ROI guides, case studies and practical articles for contractors comparing machine fit and in-house capability.</p>
     </div>
     <div class="blog-grid">
-      <a class="bcard" href="https://vortecglobal.com/what-is-hydroseeding-guide/">
+      <a class="bcard" href="https://vortecglobal.com/hydroseeding-contractor-vs-in-house-equipment/">
         <div class="b-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg')"></div>
-        <div class="b-body"><h3>What is Hydroseeding?</h3><p>The complete guide to hydroseeding, how it works and why it beats traditional sowing for erosion control.</p><span class="b-link">Read More →</span></div>
+        <div class="b-body"><h3>Contractor vs In-House Equipment</h3><p>Why civil construction companies are investing in hydroseeders to control timing, cost and quality.</p><span class="b-link">Read More →</span></div>
       </a>
-      <a class="bcard" href="https://vortecglobal.com/mastering-hydroseeding-techniques/">
+      <a class="bcard" href="https://vortecglobal.com/hydroseeding-cost-savings-guide/">
         <div class="b-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2025/04/d38b7c6a-6e74-4a30-a929-b63f3d619e4b.jpg')"></div>
-        <div class="b-body"><h3>Hydroseeding Techniques For Success</h3><p>The best ways to guarantee strong, even germination and lasting erosion control results.</p><span class="b-link">Read More →</span></div>
+        <div class="b-body"><h3>Hydroseeding Cost Savings Guide</h3><p>How contractors can compare project cost, labour and savings before they commit to a machine.</p><span class="b-link">Read More →</span></div>
       </a>
-      <a class="bcard" href="https://vortecglobal.com/polymer-soil-binder-sprayers-solution/">
+      <a class="bcard" href="https://vortecglobal.com/fulton-hogan-vx2000-hydroseeder/">
         <div class="b-img" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2024/03/P10000-no-bg.png')"></div>
-        <div class="b-body"><h3>Polymer Soil Binder Sprayers</h3><p>The best way to stop pump failure and get reliable polymer application on every job.</p><span class="b-link">Read More →</span></div>
+        <div class="b-body"><h3>Fulton Hogan VX2000 Case Study</h3><p>A real-world look at taking control of erosion work with the VX2000 hydroseeder.</p><span class="b-link">Read More →</span></div>
       </a>
     </div>
   </div>
