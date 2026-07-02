@@ -32,6 +32,9 @@
     /* ---- Vortec brand palette (sampled from live logo + theme) ---- */
     --vx-orange:#F26522;        /* primary brand orange (Vortec Orange) */
     --vx-orange-hover:#d9531a;
+    --vx-orange-aa:#c94f12;     /* WCAG AA orange: 4.5:1+ with white text / on white backgrounds */
+    --vx-orange-aa-hover:#a63f0d;
+    --vx-orange-bright:#ff9d66; /* AA orange tint for small text over dark imagery */
     --vx-ink:#15191c;           /* near-black charcoal */
     --vx-ink-2:#22272b;
     --vx-grey:#5a6268;
@@ -60,23 +63,24 @@
     padding:14px 28px;border-radius:var(--radius);border:2px solid transparent;
     cursor:pointer;transition:.18s ease;font-size:15px;
   }
-  .btn-primary{background:var(--vx-orange);color:#fff}
-  .btn-primary:hover{background:var(--vx-orange-hover)}
+  .btn-primary{background:var(--vx-orange-aa);color:#fff} /* AA fix: white on #F26522 is only ~3.1:1 */
+  .btn-primary:hover{background:var(--vx-orange-aa-hover)}
   .btn-dark{background:var(--vx-ink);color:#fff}
   .btn-dark:hover{background:#000}
   .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
   .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
   .btn-outline{background:transparent;color:var(--vx-ink);border-color:var(--vx-ink)}
   .btn-outline:hover{background:var(--vx-ink);color:#fff}
-  .eyebrow{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.18em;
-    font-size:13px;font-weight:600;color:var(--vx-orange)}
+  .eyebrow{display:block;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.18em;
+    font-size:13px;font-weight:600;color:var(--vx-orange-aa)} /* AA fix on light backgrounds */
   .section{padding:80px 0}
-  .section-head{text-align:center;max-width:760px;margin:0 auto 48px}
-  .section-head h2{font-size:38px;margin-bottom:14px}
+  .section-head{text-align:center;max-width:760px;margin:0 auto 56px}
+  .section-head .eyebrow{margin-bottom:16px}
+  .section-head h2{font-size:38px;margin-bottom:18px}
   .section-head p{color:var(--vx-grey);font-size:17px}
 
   /* ---------- PROMO / TOP UTILITY BAR ---------- */
-  .promobar{background:var(--vx-orange);color:#fff;text-align:center;font-family:'Oswald',sans-serif;
+  .promobar{background:var(--vx-orange-aa);color:#fff;text-align:center;font-family:'Oswald',sans-serif;
     text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:600;padding:8px 16px}
   .topbar{background:var(--vx-ink);color:#cfd4d7;font-size:13.5px}
   .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;flex-wrap:wrap}
@@ -88,13 +92,13 @@
 
   /* ---------- HEADER / NAV ---------- */
   header.main{background:#fff;border-bottom:1px solid var(--vx-line);position:sticky;top:0;z-index:60;box-shadow:var(--shadow-sm)}
-  header.main .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
+  header.main .wrap{display:flex;align-items:center;justify-content:space-between;height:96px;gap:28px} /* more vertical breathing room */
   .logo img{height:52px}
-  nav.primary>ul{list-style:none;display:flex;gap:26px;align-items:center;height:84px}
+  nav.primary>ul{list-style:none;display:flex;gap:38px;align-items:center;height:96px} /* wider gap between menu items */
   nav.primary>ul>li{position:static;display:flex;align-items:center;height:100%}
   nav.primary>ul>li>a{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
     font-size:15px;letter-spacing:.03em;height:100%;display:flex;align-items:center;position:relative}
-  nav.primary>ul>li>a:hover{color:var(--vx-orange)}
+  nav.primary>ul>li>a:hover{color:var(--vx-orange-aa)}
   nav.primary>ul>li>a.has-mega::after,
   nav.primary>ul>li>a.has-dropdown::after{content:"▾";font-size:11px;margin-left:5px;color:var(--vx-grey);transition:.15s}
   nav.primary>ul>li:hover>a.has-mega::after,
@@ -113,16 +117,16 @@
     display:grid;grid-template-columns:repeat(5,1fr);gap:22px 26px}
   .mega-group{display:flex;flex-direction:column}
   .mega-group-head{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:700;
-    font-size:13px;letter-spacing:.08em;color:var(--vx-orange);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--vx-line)}
-  .mega-group-head a{color:var(--vx-orange)}
+    font-size:13px;letter-spacing:.08em;color:var(--vx-orange-aa);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--vx-line)}
+  .mega-group-head a{color:var(--vx-orange-aa)}
   .mega-item{display:flex;align-items:center;gap:10px;padding:7px 6px;border-radius:var(--radius);transition:.13s}
   .mega-item:hover{background:var(--vx-bg)}
   .mega-item .mi-thumb{width:42px;height:38px;flex:0 0 42px;background:#f0f0f0 center/contain no-repeat;border-radius:4px;border:1px solid var(--vx-line)}
   .mega-item .mi-label{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;font-size:12.5px;line-height:1.15;letter-spacing:.01em;color:var(--vx-ink)}
-  .mega-item:hover .mi-label{color:var(--vx-orange)}
+  .mega-item:hover .mi-label{color:var(--vx-orange-aa)}
   .mega-foot{grid-column:1/-1;margin-top:6px;padding-top:14px;border-top:1px solid var(--vx-line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
   .mega-foot a.view-all{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--vx-ink)}
-  .mega-foot a.view-all:hover{color:var(--vx-orange)}
+  .mega-foot a.view-all:hover{color:var(--vx-orange-aa)}
   .mega-foot .mf-note{font-size:13px;color:var(--vx-grey)}
 
   /* ---- SIMPLE DROPDOWNS (matches live About / Media menu structure) ---- */
@@ -133,11 +137,9 @@
   nav.primary>ul>li:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
   .dropdown-item{display:block;padding:11px 18px;font-family:'Oswald',sans-serif;text-transform:uppercase;
     font-weight:600;font-size:13px;letter-spacing:.035em;color:var(--vx-ink);transition:.13s}
-  .dropdown-item:hover{background:var(--vx-bg);color:var(--vx-orange)}
+  .dropdown-item:hover{background:var(--vx-bg);color:var(--vx-orange-aa)}
 
-  .nav-cta{display:flex;gap:12px;align-items:center}
-  .phone-cta{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:var(--vx-ink);display:flex;align-items:center;gap:7px}
-  .phone-cta:hover{color:var(--vx-orange)}
+  .nav-cta{display:flex;gap:12px;align-items:center} /* phone removed from main nav; retained in the black utility bar */
   .burger{display:none;background:none;border:none;font-size:26px;cursor:pointer}
 
   /* ---------- HERO ---------- */
@@ -146,16 +148,19 @@
     background:url('https://vortecglobal.com/wp-content/uploads/2025/04/d38b7c6a-6e74-4a30-a929-b63f3d619e4b.jpg') center/cover no-repeat;
     transform:scale(1);animation:heroZoom 20s ease-out forwards}
   .hero-overlay{position:absolute;inset:0;z-index:1;
-    background:linear-gradient(90deg,rgba(12,14,16,.90) 0%,rgba(12,14,16,.60) 50%,rgba(12,14,16,.24) 100%)}
+    background:linear-gradient(90deg,rgba(12,14,16,.93) 0%,rgba(12,14,16,.72) 55%,rgba(12,14,16,.42) 100%)} /* stronger overlay so copy holds up on any crop */
   .hero .wrap{position:relative;z-index:2}
   @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
   @media(prefers-reduced-motion:reduce){.hero-bg{animation:none}}
-  .hero-inner{max-width:680px;text-align:left}
-  .hero h1{font-size:58px;line-height:1.03;margin:16px 0 18px}
+  .hero-inner{max-width:680px;text-align:left} /* stays on the shared left .wrap alignment, not centred */
+  .hero .eyebrow{color:var(--vx-orange-bright);font-size:15px;font-weight:700;letter-spacing:.15em;
+    text-shadow:0 1px 3px rgba(0,0,0,.55)} /* larger, bolder, AA-safe tint over imagery */
+  .hero h1{font-size:58px;line-height:1.03;margin:20px 0 22px}
   .hero h1 .hl{color:var(--vx-orange)}
-  .hero p.lede{font-size:19px;color:#e8e8e8;margin-bottom:30px;max-width:580px}
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
-  .hero-trust{display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:#cfcfcf}
+  .hero p.lede{font-size:19px;color:#f1f1f1;margin-bottom:34px;max-width:580px;text-shadow:0 1px 2px rgba(0,0,0,.45)}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-trust{display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:#d6d6d6;max-width:580px;
+    margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.25)} /* grouped proof points, clearly separated from the CTAs */
   .hero-trust span{display:flex;align-items:center;gap:8px}
   .hero-trust b{color:#fff}
 
@@ -169,7 +174,7 @@
   .tab{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:.04em;
     font-size:14px;padding:11px 20px;border-radius:var(--radius);cursor:pointer;
     background:#2a2f33;color:#ddd;border:2px solid transparent;transition:.15s}
-  .tab.active{background:var(--vx-orange);color:#fff}
+  .tab.active{background:var(--vx-orange-aa);color:#fff}
   .tab:hover:not(.active){background:#353b40}
   .finder-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
   .finder-panel{display:none}
@@ -187,14 +192,15 @@
     transition:.2s;display:flex;flex-direction:column}
   .mcard:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
   .mcard .mc-img{height:200px;background:var(--vx-bg) center/contain no-repeat;position:relative;padding:14px}
-  .mcard .mc-tag{position:absolute;top:10px;left:10px;background:var(--vx-orange);color:#fff;
+  .mcard .mc-tag{position:absolute;top:10px;left:10px;background:var(--vx-orange-aa);color:#fff;
     font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:4px 10px;border-radius:3px;z-index:2}
   .mcard .mc-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
   .mcard h3{font-size:20px}
   .mcard p{font-size:14px;color:var(--vx-grey);flex:1}
   .mcard .mc-link{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:13px;
-    color:var(--vx-ink);letter-spacing:.04em;display:inline-flex;align-items:center;gap:6px}
-  .mcard .mc-link:hover{color:var(--vx-orange)}
+    color:var(--vx-orange-aa);letter-spacing:.04em;display:flex;align-items:center;gap:6px;
+    margin-top:6px;padding-top:14px;border-top:1px solid var(--vx-line)} /* reads as a link, not body copy */
+  .mcard .mc-link:hover{color:var(--vx-orange-aa-hover);text-decoration:underline}
 
   /* ---------- APPLICATIONS ---------- */
   .apps{background:var(--vx-bg)}
@@ -202,31 +208,34 @@
   .acard{position:relative;border-radius:var(--radius);overflow:hidden;min-height:280px;display:flex;align-items:flex-end;
     color:#fff;box-shadow:var(--shadow-sm);transition:.2s}
   .acard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-  .acard::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.84) 100%);z-index:1}
+  .acard::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.22) 0%,rgba(0,0,0,.5) 45%,rgba(0,0,0,.92) 100%);z-index:1} /* darker overlay for consistent readability across photos */
   .acard .ac-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:.4s}
   .acard:hover .ac-bg{transform:scale(1.06)}
   .acard .ac-body{position:relative;z-index:2;padding:22px}
-  .acard h3{font-size:23px;margin-bottom:6px}
-  .acard p{font-size:14px;color:#e0e0e0}
+  .acard h3{font-size:23px;margin-bottom:6px;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+  .acard p{font-size:14px;color:#ececec;text-shadow:0 1px 2px rgba(0,0,0,.55)}
   .acard .ac-link{margin-top:10px;display:inline-block;font-family:'Oswald',sans-serif;font-weight:700;
-    text-transform:uppercase;font-size:13px;color:var(--vx-orange);letter-spacing:.04em}
+    text-transform:uppercase;font-size:15px;color:var(--vx-orange-bright);letter-spacing:.04em;text-shadow:0 1px 2px rgba(0,0,0,.5)}
 
   /* ---------- VORTEC ADVANTAGE / STATS ---------- */
   .why{background:var(--vx-ink);color:#fff}
-  .why-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
-  .why h2{font-size:36px;margin-bottom:18px}
-  .why p{color:#cfd4d7;font-size:16px;margin-bottom:16px}
-  .why .why-quote{border-left:3px solid var(--vx-orange);padding-left:18px;font-style:italic;color:#fff;font-size:18px;margin:24px 0}
-  .stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .stat{background:#23282c;border:1px solid #353b40;border-radius:var(--radius);padding:26px 22px;text-align:center}
-  .stat .s-num{font-family:'Oswald',sans-serif;font-weight:700;font-size:38px;color:var(--vx-orange);line-height:1}
-  .stat .s-label{font-size:14px;color:#c4c9cc;margin-top:8px}
+  .why-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+  .why .eyebrow{color:var(--vx-orange);margin-bottom:18px} /* brand orange passes AA on ink */
+  .why h2{font-size:36px;margin-bottom:24px}
+  .why p{color:#cfd4d7;font-size:16px;margin-bottom:20px}
+  .why .why-quote{border-left:3px solid var(--vx-orange);padding-left:18px;font-style:italic;color:#fff;font-size:18px;margin:30px 0}
+  .why-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);align-self:stretch;min-height:440px}
+  .why-img img{width:100%;height:100%;object-fit:cover}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 36px} /* proof points sit with the copy, above the CTA */
+  .stat{background:#23282c;border:1px solid #353b40;border-radius:var(--radius);padding:20px 18px;text-align:left}
+  .stat .s-num{font-family:'Oswald',sans-serif;font-weight:700;font-size:32px;color:var(--vx-orange);line-height:1}
+  .stat .s-label{font-size:13.5px;color:#c4c9cc;margin-top:7px}
 
   /* ---------- ADVANTAGE PILLARS ---------- */
   .pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
   .pcard{background:#fff;border:1px solid var(--vx-line);border-radius:var(--radius);padding:28px 24px;transition:.18s}
   .pcard:hover{border-color:var(--vx-orange);box-shadow:var(--shadow-sm);transform:translateY(-3px)}
-  .pcard .p-ico{width:52px;height:34px;border-radius:999px;background:rgba(242,101,34,.12);color:var(--vx-orange);
+  .pcard .p-ico{width:52px;height:34px;border-radius:999px;background:rgba(242,101,34,.12);color:var(--vx-orange-aa);
     display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:12px;
     font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
   .pcard h3{font-size:18px;margin-bottom:8px}
@@ -240,21 +249,24 @@
   .tcard .t-name{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:15px}
   .tcard .t-role{font-size:13px;color:var(--vx-grey)}
 
-  /* ---------- LEAD / CTA BAND ---------- */
-  .lead{background:var(--vx-orange);color:#fff}
-  .lead .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:46px;align-items:center}
-  .lead h2{font-size:38px;margin-bottom:12px}
-  .lead p{font-size:17px;max-width:480px;margin-bottom:22px;color:#fff}
-  .lead .eyebrow{color:#fff}
+  /* ---------- LEAD / CTA BAND (image + dark overlay; orange kept as accent only) ---------- */
+  .lead{position:relative;color:#fff;padding:104px 0;overflow:hidden}
+  .lead::before{content:"";position:absolute;inset:0;
+    background:url('https://vortecglobal.com/wp-content/uploads/2023/07/f72598fb-2c64-49d7-803b-40ddda05de7e-1024x1024.jpg') center/cover no-repeat}
+  .lead::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,14,16,.92) 0%,rgba(12,14,16,.82) 100%)}
+  .lead .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr 1fr;gap:46px;align-items:center}
+  .lead h2{font-size:38px;margin-bottom:18px}
+  .lead p{font-size:17px;max-width:480px;margin-bottom:26px;color:#e8e8e8}
+  .lead .eyebrow{color:var(--vx-orange);margin-bottom:16px}
   .lead-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .lead .phone-big{font-family:'Oswald',sans-serif;font-weight:700;font-size:30px;display:inline-flex;align-items:center;gap:10px;color:#fff}
-  .quote-box{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);color:var(--vx-ink)}
-  .quote-box h3{font-size:22px;margin-bottom:6px}
-  .quote-box .qb-sub{font-size:14px;color:var(--vx-grey);margin-bottom:18px;font-family:'Inter';text-transform:none;font-weight:400}
-  .quote-box .field{margin-bottom:13px}
-  .quote-box label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+  .quote-box{background:#fff;border-radius:var(--radius);padding:38px 34px;box-shadow:var(--shadow);color:var(--vx-ink)}
+  .quote-box h3{font-size:22px;margin-bottom:10px}
+  .quote-box .qb-sub{font-size:14px;color:var(--vx-grey);margin-bottom:26px;font-family:'Inter';text-transform:none;font-weight:400}
+  .quote-box .field{margin-bottom:18px}
+  .quote-box label{display:block;font-size:13px;font-weight:600;margin-bottom:7px}
   .quote-box input,.quote-box select{width:100%;padding:11px 13px;border:1px solid var(--vx-line);border-radius:var(--radius);font-size:15px;font-family:inherit}
-  .quote-box .qb-note{font-size:12px;color:var(--vx-grey);margin-top:6px;text-align:center}
+  .quote-box .qb-note{font-size:12px;color:var(--vx-grey);margin-top:12px;text-align:center}
 
   /* ---------- BLOG ---------- */
   .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -264,8 +276,9 @@
   .bcard .b-body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
   .bcard h3{font-size:17px;line-height:1.25}
   .bcard p{font-size:14px;color:var(--vx-grey);flex:1}
-  .bcard .b-link{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.04em}
-  .bcard .b-link:hover{color:var(--vx-orange)}
+  .bcard .b-link{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.04em;
+    color:var(--vx-orange-aa);display:flex;align-items:center;gap:6px;margin-top:4px;padding-top:12px;border-top:1px solid var(--vx-line)}
+  .bcard .b-link:hover{color:var(--vx-orange-aa-hover);text-decoration:underline}
 
   /* ---------- FOOTER ---------- */
   footer{background:#0f1316;color:#bdc3c7;padding:64px 0 28px}
@@ -290,7 +303,7 @@
     .testi-grid,.blog-grid{grid-template-columns:1fr 1fr}
     .why-grid,.lead .wrap{grid-template-columns:1fr;gap:30px}
     .hero h1{font-size:46px}
-    nav.primary,.nav-cta .btn,.nav-cta .phone-cta{display:none}
+    nav.primary,.nav-cta{display:none}
     .burger{display:block}
     .foot-grid{grid-template-columns:1fr 1fr}
   }
@@ -302,6 +315,7 @@
     .section-head h2,.lead h2,.why h2{font-size:28px}
     .topbar .tb-left{gap:14px;font-size:12px}
     .stats{grid-template-columns:1fr 1fr}
+    .why-img{min-height:260px}
   }
 
   /* ---------- MOBILE DRAWER ---------- */
@@ -316,6 +330,16 @@
   .drawer a:hover{color:var(--vx-orange)}
   .drawer .dr-cta{margin-top:24px}
   @media(max-width:1100px){.drawer{display:block}}
+
+  /* ---------- MOBILE STICKY CTA BAR ---------- */
+  .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:150;display:none;gap:10px;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(15,19,22,.97);
+    box-shadow:0 -4px 18px rgba(0,0,0,.3)}
+  .sticky-cta .btn{flex:1;justify-content:center;padding:13px 10px;font-size:14px;white-space:nowrap}
+  @media(max-width:1100px){
+    .sticky-cta{display:flex}
+    body{padding-bottom:72px} /* keep footer clear of the sticky bar */
+  }
 </style>
 </head>
 <body>
@@ -451,7 +475,6 @@
       </ul>
     </nav>
     <div class="nav-cta">
-      <a class="phone-cta" href="tel:1800867832">☎ 1800 867 832</a>
       <a class="btn btn-primary" href="https://vortecglobal.com/contact/">Get a Quote</a>
     </div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
@@ -700,13 +723,16 @@
         <p>Vortec builds premium hydraulic erosion-control systems for civil, environmental, earthmoving and landscape contractors, plus councils and landfills that need commercial-grade equipment.</p>
         <p>The Vortec range helps operators bring critical work in-house, cut erosion-control costs by up to 75% versus contracting, and control timing, quality and margin with machines backed by genuine after-sales service.</p>
         <div class="why-quote">"Revegetate &amp; control erosion effectively with world-class hydroseeders &amp; erosion control systems."</div>
+        <div class="stats">
+          <div class="stat"><div class="s-num">75%</div><div class="s-label">Potential saving versus contracting</div></div>
+          <div class="stat"><div class="s-num">50+</div><div class="s-label">Years' combined experience</div></div>
+          <div class="stat"><div class="s-num">1500 m²/h</div><div class="s-label">VX2000 flagship productivity</div></div>
+          <div class="stat"><div class="s-num">AU/NZ</div><div class="s-label">Commercial support focus</div></div>
+        </div>
         <a class="btn btn-primary" href="https://vortecglobal.com/about-the-vortec-story/">The Vortec Story</a>
       </div>
-      <div class="stats">
-        <div class="stat"><div class="s-num">75%</div><div class="s-label">Potential saving versus contracting</div></div>
-        <div class="stat"><div class="s-num">50+</div><div class="s-label">Years' combined experience</div></div>
-        <div class="stat"><div class="s-num">1500 m²/h</div><div class="s-label">VX2000 flagship productivity</div></div>
-        <div class="stat"><div class="s-num">AU/NZ</div><div class="s-label">Commercial support focus</div></div>
+      <div class="why-img">
+        <img src="https://vortecglobal.com/wp-content/uploads/2023/09/1688620292343-1024x576.jpg" alt="Vortec hydroseeder spraying green slurry across a revegetation site">
       </div>
     </div>
   </div>
@@ -749,9 +775,9 @@
       <div class="lead-ctas">
         <a class="phone-big" href="tel:1800867832">☎ 1800 867 832</a>
       </div>
-      <div class="lead-ctas" style="margin-top:18px">
-        <a class="btn btn-dark" href="https://vortecglobal.com/downloads/">Download Brochure</a>
-        <a class="btn btn-outline" href="https://vortecglobal.com/contact/" style="border-color:#fff;color:#fff">Book a Discovery Call</a>
+      <div class="lead-ctas" style="margin-top:20px">
+        <a class="btn btn-primary" href="https://vortecglobal.com/downloads/">Download Brochure</a>
+        <a class="btn btn-ghost" href="https://vortecglobal.com/contact/">Book a Discovery Call</a>
       </div>
     </div>
     <div class="quote-box">
@@ -841,6 +867,12 @@
     </div>
   </div>
 </footer>
+
+<!-- ===== MOBILE STICKY CTA BAR (visible below 1100px) ===== -->
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="#finder">Find Your Machine</a>
+  <a class="btn btn-ghost" href="tel:1800867832">☎ 1800 867 832</a>
+</div>
 
 <script>
   // Pathway finder tabs

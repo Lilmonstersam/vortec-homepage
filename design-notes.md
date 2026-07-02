@@ -61,6 +61,24 @@ British English spelling used throughout (minimise, optimise, colour). Em dashes
 - Lightweight: one HTML file, two web fonts, no page-builder bloat.
 - **Nation selector removed** per brief.
 
+## Round 2 revisions (client feedback, July 2026)
+
+**Header / nav.** Header height 84px → 96px, menu item gap 26px → 38px. Phone number removed from the main nav (Get a Quote CTA retained); phone remains in the black utility bar. New mobile sticky bottom CTA bar below 1100px: Find Your Machine (primary) + phone call.
+
+**Hero.** Eyebrow enlarged to 15px/700 in an AA-safe orange tint (`#FF9D66`) with a subtle text shadow. Overlay strengthened across the full gradient so the lede holds contrast on any crop. Trust stats separated from the CTAs with a top rule and 40px spacing so they read as grouped proof points. Content remains left-aligned to the shared page grid.
+
+**Shop by Application.** Card overlay darkened top-to-bottom (no longer transparent in the upper half) plus text shadows for consistent readability across photos.
+
+**About.** Stats moved into the left column between the copy and the CTA (2×2 compact cards); right column replaced with a supporting site image. Extra vertical spacing between eyebrow, heading, copy, stats and CTA.
+
+**Quote section.** Solid orange background replaced with a site image + dark overlay; orange now used only for accents (eyebrow, primary CTA). Section padding 104px top/bottom. Form internals loosened (38px card padding, 18px between fields, more room around the heading).
+
+**Accessibility (WCAG AA contrast).** New token `--vx-orange-aa: #C94F12` (4.56:1 with white) used for: primary button fills, promo bar, eyebrow labels on light backgrounds, mega-menu group headings, card tags, active tabs, pillar badges and text links on white. `--vx-orange-bright: #FF9D66` used for small orange text over dark imagery (hero eyebrow, application card links). Brand `#F26522` retained on dark ink backgrounds where it passes (~4.9:1) and for large display accents (H1 highlight, stat numerals). White-on-`#F26522` (3.1:1) no longer appears at body/button sizes.
+
+**Link prominence.** Product Category and Buyer Resources card links now orange, full-width with a top rule, arrow retained, underline on hover.
+
+**Global spacing.** Section-head margin 48px → 56px; eyebrows given 16px clearance below; heading-to-copy gap increased.
+
 ## Deliberately out of scope for this mock-up
 
 - Functional forms / live search filtering (review prototype only).
