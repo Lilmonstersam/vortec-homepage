@@ -79,6 +79,10 @@ British English spelling used throughout (minimise, optimise, colour). Em dashes
 
 **Global spacing.** Section-head margin 48px → 56px; eyebrows given 16px clearance below; heading-to-copy gap increased.
 
+## Round 3 revisions (content gaps, July 2026)
+
+VR600 Trailer and VR2000 Trailer added to the Hydroseeders mega-menu group and mobile drawer (both live products were missing). Flocculant group now lists Fi600 / Fi1200 / Fi1500 with dashed "Page TBC" badges as a visible reminder that these product pages need building; they link to the flocculant category page in the interim. Careers link added to the footer Company column.
+
 ## Deliberately out of scope for this mock-up
 
 - Functional forms / live search filtering (review prototype only).
