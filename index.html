@@ -152,7 +152,7 @@
     transform:scale(1);animation:heroZoom 20s ease-out forwards}
   .hero-overlay{position:absolute;inset:0;z-index:1;
     background:linear-gradient(90deg,rgba(12,14,16,.93) 0%,rgba(12,14,16,.72) 55%,rgba(12,14,16,.42) 100%)} /* stronger overlay so copy holds up on any crop */
-  .hero .wrap{position:relative;z-index:2}
+  .hero .wrap{position:relative;z-index:2;width:100%}
   @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.12)}}
   @media(prefers-reduced-motion:reduce){.hero-bg{animation:none}}
   .hero-inner{max-width:680px;text-align:left} /* stays on the shared left .wrap alignment, not centred */
