@@ -83,6 +83,22 @@ British English spelling used throughout (minimise, optimise, colour). Em dashes
 
 VR600 Trailer and VR2000 Trailer added to the Hydroseeders mega-menu group and mobile drawer (both live products were missing). Flocculant group now lists Fi600 / Fi1200 / Fi1500 with dashed "Page TBC" badges as a visible reminder that these product pages need building; they link to the flocculant category page in the interim. Careers link added to the footer Company column.
 
+## Round 4 revisions (client feedback, July 2026)
+
+**Declutter and simplify (styling reference alignment).** Page restructured from ten stacked sections to seven, following the client's styling-reference PDF: hero → range cards → application tiles → why Vortec → case-study band → support row → quote band. Removed: the 3-tab Pathway Finder (redundant with the range and application sections and the approved mega-menus), the 4-card Advantage pillars and 2×2 stat tiles (merged into one Why Vortec section), the placeholder testimonials grid (replaced by a real case-study band) and the separate blog grid (folded into the support row). Promo bar folded into the single top utility bar; on mobile the bar collapses to phone + enquiries only. Eyebrow labels removed from section heads; card copy cut to title + link where possible.
+
+**Styling-reference card treatment.** Product categories now use the reference's dark charcoal cards with the product photo, an orange circular arrow and an uppercase label bar: two leading cards (Hydroseeders, Hydro-Mulchers) over three supporting cards (Polymer, Flocculant, Ground Preparation). Case-study band uses the reference's solid orange treatment, rendered in the AA orange token (`--vx-orange-aa`) so white body copy holds 4.5:1 contrast.
+
+**Landfill de-emphasised (kept for SEO).** Removed from the H1, hero copy and meta description. No longer a leading category card; it appears as a quiet "Also in the range" text link, the last application tile, the last footer Products link, the mega-menu group (unchanged) and the form's application dropdown. Category and product pages remain the SEO/conversion surface for this market.
+
+**Advisory-partner positioning.** New Why Vortec section leads with "More than an equipment supplier. A partner in the work." Copy covers: application knowledge, selecting the right solution not just the right machine, productivity and commercial outcomes, reducing operational risk and downtime, long-term support and partnership, and confidence in the investment. Hero reframed from product-first to advice-first ("backed by advice you can build on"); a "Not sure where to start?" advisory prompt sits under the range cards; the quote band retitled "Talk it through before you invest".
+
+**In-house strategic themes.** In-house erosion control framed beyond cost: control over timing, responsiveness, consistent quality, flexibility and predictable project outcomes (Why Vortec copy and NACAP band).
+
+**Trust and proof.** Hero proof line now cites Australian design/build, 50+ years' experience and named projects (NACAP, Fulton Hogan). New orange case-study band features the NACAP erosion-control story (vortecglobal.com/nacap-erosion-control-case-study/) with the Fulton Hogan VX2000 case study as secondary CTA; NACAP also added to the footer Company column. Support row reframes after-sales as "Support that outlasts the sale" (application advice, service/parts/warranty, guides and case studies).
+
+**Mobile.** Fewer sections and shorter cards cut scroll depth roughly in half; application tiles are compact single-line cards; sub-range cards stack to one column at 640px; sticky bottom CTA bar retained; hero tightened (480px min-height, 34px H1).
+
 ## Deliberately out of scope for this mock-up
 
 - Functional forms / live search filtering (review prototype only).

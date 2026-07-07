@@ -65,6 +65,7 @@ Then in the GitHub repo: **Settings → Pages → Build and deployment → Sourc
 
 - [x] v1 mock-up matching brand + improved product-category navigation
 - [x] GitHub Actions Pages deployment ready
+- [x] Round 4: simplified layout per styling reference, advisory-partner positioning, Landfill de-emphasised, NACAP case-study band
 - [ ] Client review / feedback round
 - [ ] Production images swapped (self-host, compress, WebP)
 - [ ] Handoff for WordPress build
