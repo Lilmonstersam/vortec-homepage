@@ -99,6 +99,18 @@ VR600 Trailer and VR2000 Trailer added to the Hydroseeders mega-menu group and m
 
 **Mobile.** Fewer sections and shorter cards cut scroll depth roughly in half; application tiles are compact single-line cards; sub-range cards stack to one column at 640px; sticky bottom CTA bar retained; hero tightened (480px min-height, 34px H1).
 
+## Round 5 revisions (client feedback + Ahrefs research, July 2026)
+
+**"Erosion control" demoted to supporting context.** The AU SERP for "erosion control" is government guidance pages (NSW Gov, QLD environment), coir mesh and sediment-product suppliers, and Wikipedia; nobody buying hydroseeding capability lands there. The AU SERP for "hydroseeding" is contractor service pages and buyer guides, and Vortec already ranks in it. Hero, meta description and section copy now lead with hydroseeding/hydromulching terms; "erosion control" remains only as an application qualifier (application tile, range subhead, NACAP context, footer mission).
+
+**Hydroseeding leads over hydromulching.** Ahrefs AU: "hydroseeding" 1,000/mo vs "hydromulching" 200/mo, and every transactional machine term is hydroseeder-based ("hydroseeder" 150/mo commercial+transactional, "hydroseeding machine" 150/mo, "hydroseeder for sale" 80/mo, "hydroseeder for sale australia" 40/mo). H1 now targets "hydroseeding machines"; hydromulching is paired as the secondary term throughout, matching how AU contractor SERPs pair both. Hero lede speaks directly to the qualified buyer: a civil contractor asked to price or self-perform hydroseeding on a project.
+
+**P10000 removed** from the Products mega-menu, the polymer range card and the Dust Suppression menu thumb (P2000 imagery substituted).
+
+**Agriculture removed as a focus area.** The Agriculture mega-menu group and application tile are gone; the Products mega is now four groups. The VX2000 Agri Hydroviner lives under Hydroseeders & Hydro-Mulchers (it is a VX2000 variant), plus the low-key "Also in the range" line and footer. The vacated application tile is now Mine Site Rehab (already in the Applications menu). The quote-form Agriculture option was removed and the application options reordered to lead with hydroseeding.
+
+**Emoji glyphs stripped from copy** (phone, envelope, play symbols); phone CTAs now read "Call 1800 867 832".
+
 ## Deliberately out of scope for this mock-up
 
 - Functional forms / live search filtering (review prototype only).
