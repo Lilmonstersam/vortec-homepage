@@ -166,6 +166,9 @@
   .rcard .rc-img img{max-height:230px;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(0,0,0,.45))}
   .range-grid-sub .rcard .rc-img{min-height:170px;padding:20px}
   .range-grid-sub .rcard .rc-img img{max-height:150px}
+  /* rc-img-fill: forces identical aspect ratio/crop across tiles regardless of source image dimensions (mixed product cutouts + photos) */
+  .range-grid-sub .rcard .rc-img.rc-img-fill{padding:0;aspect-ratio:4/3;min-height:0}
+  .range-grid-sub .rcard .rc-img.rc-img-fill img{width:100%;height:100%;max-height:none;object-fit:cover;filter:none}
   .rcard .rc-bar{display:flex;align-items:center;gap:12px;padding:16px 20px;border-top:1px solid rgba(255,255,255,.08)}
   .rcard .rc-arrow{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--vx-orange);
     display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;transition:.18s}
@@ -503,7 +506,7 @@
   <div class="wrap">
     <div class="hero-inner">
       <span class="kicker">Hydroseeding &amp; Hydromulching Equipment · Built in Australia</span>
-      <h1>Hydroseeding machines, <span class="hl">backed by advice you can build on.</span></h1>
+      <h1>Hydroseeding machines, <span class="hl">backed by service you can build on.</span></h1>
       <p class="lede">Asked to price hydroseeding on your next civil project? Vortec helps contractors and councils self-perform hydroseeding and hydromulching with confidence. We match the machine to your sites, your programme and your margins, then stand behind it for the life of the equipment.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#range">Find Your Machine</a>
@@ -535,15 +538,15 @@
 
     <div class="range-grid-sub">
       <a class="rcard" href="https://vortecglobal.com/polymer-sprayers/">
-        <div class="rc-img"><img src="https://vortecglobal.com/wp-content/uploads/2021/04/P2000-MAIN-PHOTO40x40-1.png" alt="Vortec P2000 polymer sprayer"></div>
+        <div class="rc-img rc-img-fill"><img src="https://vortecglobal.com/wp-content/uploads/2024/03/P10000-no-bg.png" alt="Vortec P10000 polymer sprayer"></div>
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Polymer Sprayers</span></div>
       </a>
       <a class="rcard" href="https://vortecglobal.com/flocculant-sprayers/">
-        <div class="rc-img"><img src="https://vortecglobal.com/wp-content/uploads/2021/03/VORTEC-Flocculant-coagulant-sprayers-applicators-systems-1-e1617867147379.jpg" alt="Vortec flocculant sprayer system for sediment control"></div>
+        <div class="rc-img rc-img-fill"><img src="https://vortecglobal.com/wp-content/uploads/2020/10/Hero-banner-v2.jpg" alt="Vortec flocculant sprayer system for sediment control"></div>
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Flocculant Sprayers</span></div>
       </a>
       <a class="rcard" href="https://vortecglobal.com/product/rippa-rake-s200/">
-        <div class="rc-img"><img src="https://vortecglobal.com/wp-content/uploads/2023/12/s200-40x40-1.png" alt="Vortec Rippa-Rake S200 ground preparation tool"></div>
+        <div class="rc-img rc-img-fill"><img src="https://vortecglobal.com/wp-content/uploads/2023/12/RIPPA-RAKE-S200-LOW-MAINTENACE-1-2.jpg" alt="Vortec Rippa-Rake S200 ground preparation tool"></div>
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Ground Preparation</span></div>
       </a>
     </div>
