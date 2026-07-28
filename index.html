@@ -202,6 +202,12 @@
   .range-grid-sub .rcard .rc-img img{max-height:160px}
   .range-grid-sub .rcard .rc-img.rc-img-fill{padding:0;aspect-ratio:4/3;min-height:0}
   .range-grid-sub .rcard .rc-img.rc-img-fill img{width:100%;height:100%;max-height:none;object-fit:cover;filter:none}
+  /* multi-product cards: lay the cutouts out in a grid instead of one centred image */
+  .rcard .rc-img.rc-grid{display:grid;gap:10px;align-items:center;justify-items:center}
+  .rcard .rc-img.rc-grid.two{grid-template-columns:1fr 1fr}
+  .rcard .rc-img.rc-grid.four{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+  .rcard .rc-img.rc-grid img{width:100%;height:100%;max-height:none;object-fit:contain}
+  .range-grid-sub .rcard .rc-img.rc-grid img{max-height:none}
   .rcard .rc-bar{display:flex;align-items:center;gap:12px;padding:16px 20px;border-top:1px solid rgba(255,255,255,.08)}
   .rcard .rc-arrow{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--vx-orange);
     display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;transition:.18s}
@@ -264,7 +270,26 @@
 
   /* NACAP feature band (individual section) */
   .case{background:var(--vx-orange-aa);color:#fff;padding:80px 0}
-  .case .wrap{display:block}
+  .case .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+  /* click-to-play thumbnail (opens lightbox) */
+  .video-thumb{position:relative;display:block;width:100%;padding:0;border:0;cursor:pointer;background:#000;
+    border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.28);aspect-ratio:16/9;transition:.2s}
+  .video-thumb:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.34)}
+  .video-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .video-thumb .vt-play{position:absolute;inset:0;margin:auto;width:62px;height:62px;border-radius:50%;
+    background:rgba(242,101,34,.94);display:flex;align-items:center;justify-content:center;transition:.2s}
+  .video-thumb:hover .vt-play{transform:scale(1.08);background:var(--vx-orange)}
+  .video-thumb .vt-play svg{width:30px;height:30px;fill:#fff;margin-left:3px}
+  .video-thumb .vt-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 12px;color:#fff;
+    font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:.06em;
+    background:linear-gradient(180deg,transparent,rgba(0,0,0,.72))}
+  /* lightbox */
+  .vmodal{position:fixed;inset:0;z-index:300;background:rgba(8,10,12,.92);display:none;align-items:center;justify-content:center;padding:24px}
+  .vmodal.open{display:flex}
+  .vmodal-frame{position:relative;width:min(1000px,92vw);aspect-ratio:16/9;background:#000;border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .vmodal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .vmodal-close{position:absolute;top:18px;right:24px;background:none;border:0;color:#fff;font-size:40px;line-height:1;cursor:pointer;padding:6px 12px}
+  .vmodal-close:hover{color:var(--vx-orange)}
   .case-video{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.28);aspect-ratio:16/9;background:#000}
   .case-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   .case h2{font-size:32px;margin-bottom:16px}
@@ -396,8 +421,12 @@
     .section-head p{font-size:15px}
     .topbar .tb-left a:nth-child(2){display:none} /* keep mobile bar to phone + socials */
     .hero{min-height:0;padding:48px 0}
+    /* darker overlay so hero copy stays legible on small screens */
+    .hero-overlay{background:linear-gradient(90deg,rgba(10,12,14,.92) 0%,rgba(10,12,14,.86) 55%,rgba(10,12,14,.74) 100%)}
     .hero h1{font-size:32px;margin:14px 0 16px}
-    .hero p.lede{font-size:16px;margin-bottom:24px}
+    .hero p.lede{font-size:16px;margin-bottom:34px}
+    .hero-ctas{gap:10px}
+    .hero-ctas .btn{padding:11px 18px;font-size:13.5px}
     .hero-trust{margin-top:20px;font-size:14px}
     .hero-proof{margin-top:18px;padding-top:16px;font-size:13.5px}
     .marquee-track img{height:44px}
@@ -484,7 +513,7 @@
   <div class="wrap">
     <div class="tb-left">
       <a href="tel:1800867832">1800 867 832</a>
-      <a href="https://vortecglobal.com/contact/">Enquiries</a>
+      <a href="https://vortecglobal.com/contact/">Request a Demo</a>
     </div>
     <div class="tb-right">
       <a class="social" href="https://www.linkedin.com/company/vortec-global/" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7c0-1.67-.03-3.8-2.32-3.8-2.32 0-2.68 1.8-2.68 3.68V24H8V8z"/></svg></a>
@@ -529,8 +558,8 @@
 
               <div class="mega-group">
                 <div class="mega-group-head"><a href="https://vortecglobal.com/hydroseeder-hydromulchers/">Ground Preparation</a></div>
-                <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-s200/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/s200-40x40-1.png')"></span><span class="mi-label">Rippa-Rake S200</span></a>
                 <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-x230/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/x230-40x40-1.png')"></span><span class="mi-label">Rippa-Rake X230</span></a>
+                <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-s200/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/s200-40x40-1.png')"></span><span class="mi-label">Rippa-Rake S200</span></a>
                 <a class="mega-item" href="https://vortecglobal.com/product/rippa-rake-x140/"><span class="mi-thumb" style="background-image:url('https://vortecglobal.com/wp-content/uploads/2023/12/x140-40x40-1.png')"></span><span class="mi-label">Rippa-Rake X140</span></a>
               </div>
 
@@ -685,19 +714,27 @@
     </div>
 
     <div class="range-grid-lead">
-      <a class="rcard light" href="https://vortecglobal.com/product/hydroseeders-vr2000/">
-        <div class="rc-img"><img src="assets/vr2000-skid.png" alt="Vortec VR2000 hydroseeder"></div>
-        <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Hydroseeders</span></div>
+      <a class="rcard light" href="https://vortecglobal.com/products/">
+        <div class="rc-img"><img src="assets/vxcommander.png" alt="Vortec VX Commander"></div>
+        <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">All Products</span></div>
       </a>
-      <a class="rcard light" href="https://vortecglobal.com/product/vx2000-paddle-agitated-hydromulcher/">
-        <div class="rc-img"><img src="assets/vx2000-skid.png" alt="Vortec VX2000 hydromulcher"></div>
-        <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Hydromulchers</span></div>
+      <a class="rcard light" href="https://vortecglobal.com/hydroseeders/">
+        <div class="rc-img rc-grid two">
+          <img src="assets/vr2000-skid.png" alt="Vortec VR2000 skid hydroseeder">
+          <img src="assets/vr600-skid.png" alt="Vortec VR600 skid hydroseeder">
+        </div>
+        <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Hydroseeders</span></div>
       </a>
     </div>
 
     <div class="range-grid-sub">
       <a class="rcard light" href="https://vortecglobal.com/polymer-sprayers/">
-        <div class="rc-img"><img src="assets/p1000.png" alt="Vortec polymer sprayer"></div>
+        <div class="rc-img rc-grid four">
+          <img src="assets/p600.png" alt="Vortec P600 polymer sprayer">
+          <img src="assets/p1000.png" alt="Vortec P1000 polymer sprayer">
+          <img src="assets/p1200.png" alt="Vortec P1200 polymer sprayer">
+          <img src="assets/p2000.png" alt="Vortec P2000 polymer sprayer">
+        </div>
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Polymer Sprayers</span></div>
       </a>
       <a class="rcard light" href="https://vortecglobal.com/landfill-cover-applicators/">
@@ -860,22 +897,30 @@
 <!-- ===== NACAP FEATURE + TESTIMONIAL ===== -->
 <section class="case" id="nacap">
   <div class="wrap">
-    <div style="margin-bottom:28px">
+    <div>
       <span class="case-kicker">Proven In The Field</span>
       <h2>Trusted By One Of Australia's Leading Contractors</h2>
-      <p style="font-size:17px;max-width:760px;opacity:.96;margin-top:8px">NACAP talked to the experts at Vortec and got amazing results. When one of Australia's leading pipeline contractors needed dependable erosion control across demanding project sites, Vortec helped spec the right solution and backed it in the field.</p>
+      <p>NACAP talked to the experts at Vortec and got amazing results. When one of Australia's leading pipeline contractors needed dependable erosion control across demanding project sites, Vortec helped spec the right solution and backed it in the field.</p>
+      <div class="case-ctas" style="margin-top:26px">
+        <a class="btn btn-white" href="https://vortecglobal.com/nacap-erosion-control-case-study/">Read the NACAP Story</a>
+      </div>
     </div>
 
-    <div class="video-embed" style="max-width:860px">
-      <iframe src="https://www.youtube.com/embed/ZyN4n6wYl3I" title="Vortec x NACAP hydromulching in the field" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-
-    <div class="case-ctas" style="margin-top:32px">
-      <a class="btn btn-white" href="https://vortecglobal.com/nacap-erosion-control-case-study/">Read the NACAP Story</a>
-      <a class="btn btn-line" href="https://vortecglobal.com/fulton-hogan-vx2000-hydroseeder/">Fulton Hogan Case Study</a>
-    </div>
+    <button class="video-thumb" type="button" data-video="ZyN4n6wYl3I" aria-label="Play the NACAP case study video">
+      <img src="https://img.youtube.com/vi/ZyN4n6wYl3I/hqdefault.jpg" alt="Vortec x NACAP hydromulching in the field">
+      <span class="vt-play" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </span>
+      <span class="vt-cap">Watch the NACAP story</span>
+    </button>
   </div>
 </section>
+
+<!-- ===== VIDEO LIGHTBOX ===== -->
+<div class="vmodal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player">
+  <button class="vmodal-close" id="videoClose" aria-label="Close video">&times;</button>
+  <div class="vmodal-frame"><div id="videoMount"></div></div>
+</div>
 
 <!-- ===== EDUCATION / GUIDES BAND ===== -->
 <section class="edu" id="guides">
@@ -926,23 +971,21 @@
         </div>
       </a>
       <a class="scard" href="https://vortecglobal.com/about-the-vortec-story/#support">
-        <div class="s-img" style="background-image:url('assets/service.jpg')"></div>
+        <div class="s-img" style="background-image:url('assets/service.jpg');background-position:center 22%"></div>
         <div class="s-body">
           <h3>Service, Parts &amp; Warranty</h3>
           <p>Genuine parts, technical phone support and warranty backing that keep machines working and downtime off your programme.</p>
           <span class="s-link">Explore Support →</span>
         </div>
       </a>
-      <div class="scard">
-        <div class="s-video">
-          <iframe src="https://www.youtube.com/embed/uzV3I5qkGmE" title="VX2000 Hydroseeder case study: The Regenerative" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+      <a class="scard" href="https://vortecglobal.com/articles-hydroseeding-blogs/">
+        <div class="s-img" style="background-image:url('assets/josh-frappell.jpg');background-position:center 25%"></div>
         <div class="s-body">
-          <h3>VX2000 Powers Growth For The Regenerative</h3>
-          <p>Josh Frappell, Managing Director of The Regenerative in the Central Tablelands, NSW, put the VX2000 to work on land rehabilitation and erosion control. It paid for itself in about two months.</p>
-          <a class="s-link" href="https://vortecglobal.com/vx2000-hydroseeder-case-study-regenerative/">Read the case study →</a>
+          <h3>Case Studies &amp; Video Testimonials</h3>
+          <p>Cost-savings guides, contractor-versus-in-house comparisons and real project stories to help you build the business case.</p>
+          <span class="s-link">Browse Resources →</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -1071,6 +1114,22 @@
   backdrop.addEventListener('click',closeDrawer);
   // close drawer when a link is tapped
   document.querySelectorAll('#drawer a.dr-item, #drawer .dr-cta, #drawer .dr-call').forEach(function(a){a.addEventListener('click',closeDrawer)});
+
+  // video lightbox: click a thumbnail to expand the video in a popup
+  var vModal=document.getElementById('videoModal'),
+      vMount=document.getElementById('videoMount'),
+      vClose=document.getElementById('videoClose');
+  function openVideo(id){
+    vMount.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" title="Vortec video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    vModal.classList.add('open');document.body.style.overflow='hidden';
+  }
+  function closeVideo(){vModal.classList.remove('open');vMount.innerHTML='';document.body.style.overflow='';}
+  document.querySelectorAll('.video-thumb').forEach(function(b){
+    b.addEventListener('click',function(){openVideo(b.getAttribute('data-video'))});
+  });
+  if(vClose)vClose.addEventListener('click',closeVideo);
+  if(vModal)vModal.addEventListener('click',function(e){if(e.target===vModal)closeVideo()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideo()});
 
   // enquiry form: submit in place (mock-up, no backend) instead of navigating away
   var cbForm=document.getElementById('callbackForm');
