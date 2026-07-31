@@ -202,12 +202,6 @@
   .range-grid-sub .rcard .rc-img img{max-height:160px}
   .range-grid-sub .rcard .rc-img.rc-img-fill{padding:0;aspect-ratio:4/3;min-height:0}
   .range-grid-sub .rcard .rc-img.rc-img-fill img{width:100%;height:100%;max-height:none;object-fit:cover;filter:none}
-  /* multi-product cards: lay the cutouts out in a grid instead of one centred image */
-  .rcard .rc-img.rc-grid{display:grid;gap:10px;align-items:center;justify-items:center}
-  .rcard .rc-img.rc-grid.two{grid-template-columns:1fr 1fr}
-  .rcard .rc-img.rc-grid.four{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
-  .rcard .rc-img.rc-grid img{width:100%;height:100%;max-height:none;object-fit:contain}
-  .range-grid-sub .rcard .rc-img.rc-grid img{max-height:none}
   .rcard .rc-bar{display:flex;align-items:center;gap:12px;padding:16px 20px;border-top:1px solid rgba(255,255,255,.08)}
   .rcard .rc-arrow{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--vx-orange);
     display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;transition:.18s}
@@ -719,22 +713,14 @@
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">All Products</span></div>
       </a>
       <a class="rcard light" href="https://vortecglobal.com/hydroseeders/">
-        <div class="rc-img rc-grid two">
-          <img src="assets/vr2000-skid.png" alt="Vortec VR2000 skid hydroseeder">
-          <img src="assets/vr600-skid.png" alt="Vortec VR600 skid hydroseeder">
-        </div>
+        <div class="rc-img"><img src="assets/vr2000-skid.png" alt="Vortec VR2000 skid hydroseeder"></div>
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Hydroseeders</span></div>
       </a>
     </div>
 
     <div class="range-grid-sub">
       <a class="rcard light" href="https://vortecglobal.com/polymer-sprayers/">
-        <div class="rc-img rc-grid four">
-          <img src="assets/p600.png" alt="Vortec P600 polymer sprayer">
-          <img src="assets/p1000.png" alt="Vortec P1000 polymer sprayer">
-          <img src="assets/p1200.png" alt="Vortec P1200 polymer sprayer">
-          <img src="assets/p2000.png" alt="Vortec P2000 polymer sprayer">
-        </div>
+        <div class="rc-img"><img src="assets/p2000.png" alt="Vortec P2000 polymer sprayer"></div>
         <div class="rc-bar"><span class="rc-arrow">→</span><span class="rc-label">Polymer Sprayers</span></div>
       </a>
       <a class="rcard light" href="https://vortecglobal.com/landfill-cover-applicators/">
